@@ -18,7 +18,6 @@ const aside = document.querySelector(".aside")
 const on = document.querySelector(".bars")
 const off = document.querySelector(".times")
 
-
 on.addEventListener('click', () => sideBar('on'))
 off.addEventListener('click', () => sideBar('off'))
 
@@ -34,36 +33,40 @@ const sideBar = (toggleState) => {
   }
 }
 
+// Pop Up
+// const popup = document.querySelector(".popup") 
+// const colorBox = document.querySelector(".colorbox")
+// const timesBtn = document.querySelector(".off")
 
-//h1 Bounce effect
-// $(document).ready(function () {
-//   var letters = $('.ha').text();
-//   var nHTML = '';
-//   for (var letter of letters) {
-//     nHTML += "<span class='a'>" + letter + "</span>";
+// colorBox.addEventListener('click', () => popUp('up'))
+// timesBtn.addEventListener('click', () => popUp('down'))
+
+
+// const popUp = (toggleState) => {
+//   if(toggleState === 'up') {
+//     popup.classList.add('show-pop')
+//     timesBtn.style.display = 'block'
+//   } else {
+//     popup.classList.remove('show-pop')
+//     timesBtn.style.display = 'none'
 //   }
-//   $('.ha').html(nHTML);
-// })
-
-// $(document).ready(function () {
-//   var letters = $('.hs').text();
-//   var nHTML = '';
-//   for (var letter of letters) {
-//     nHTML += "<span class='a'>" + letter + "</span>";
-//   }
-//   $('.hs').html(nHTML);
-// })
+// }
 
 
-
-
-// Animated text
-// var typed = new Typed(".text", {
-//   strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
-//   typeSpeed: 60,
-//   backSpeed: 60,
-//   loop: true
-// })
+// Jquery script for the text canvas
+$(document).ready(function (){
+  if(!$("#myCanvas").tagcanvas({
+    textColour: "#08fdd8",
+    outlineColour: "transparent",
+    reverse: true,
+    dept: 0.8,
+    maxSpeed: 0.09,
+    weight: true,
+  }, "tags")){
+    //something went wrong hide the canvas
+    $("#myCanvasContainer");
+  }
+})
 
 // Confirmation Email
 const contactForm = document.querySelector('.contact-form')
