@@ -33,6 +33,14 @@ const sideBar = (toggleState) => {
   }
 }
 
+// Animated H1 Text  
+var typed = new Typed(".text", {
+  strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
+  typeSpeed: 60,
+  backSpeed: 60,
+  loop: true
+})
+
 // Pop Up
 // const popup = document.querySelector(".popup") 
 // const colorBox = document.querySelector(".colorbox")
