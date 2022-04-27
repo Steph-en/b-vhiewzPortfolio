@@ -661,31 +661,6 @@ input.btn2:hover {
 }
 /* --------END OF CONTACT----------- */
 
-/* Pop Up Card */
-/* .popup{
-	width: 420px;
-	height: auto;
-	border-radius: 3px;
-	position: absolute;
-	top: 1170px;
-	left: 100px;
-	background-color: #909096;
-	border: 1px solid #909096;
-	box-shadow: 0 0 0 1px rgb(48, 48, 48);
-	z-index: 999; 
-	display: none;
-}
-.times-btn .fas{
-	float: right;
-	padding: 10px;
-	font-size: 2rem;
-	cursor: pointer;
-}
-.show-pop{
-	height: 100%;
-	display: block;
-} */
-
 /* Media Query For Larger Screens */
 @media screen and (min-width: 950px) {
 	/* Navigation */
@@ -897,28 +872,6 @@ input.btn2:hover {
 		font-size: 1.7rem;
 		line-height: 2rem;
 	}
-
-	/* Pop Up Card */
-	/* .popup{
-		width: 960px;
-		height: auto;
-		position: absolute;
-		top: 1030px;
-		left: 300px;
-		z-index: 999;
-		overflow: hidden;
-	}
-	.times-btn .fas{
-		float: right;
-		padding: 10px;
-		font-size: 2rem;
-		cursor: pointer;
-		overflow: hidden;
-	}
-	.show-pop{
-		height: 100%;
-		overflow: visible;
-	} */
 }
 
 /* Cursor */
