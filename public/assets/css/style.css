@@ -159,9 +159,9 @@ header {
 	padding-left: 1.5em;
 }
 .text-zone h1 {
-	font-size: 4.5em;
+	font-size: 4em;
 	color: #fff;
-	line-height: 65px;
+	line-height: 60px;
 	letter-spacing: 0.5px;
 }
 #section-home .text{
@@ -171,7 +171,7 @@ header {
 	display: none;
 }
 .text-zone .gray-text {
-	margin-top: 50px;
+	margin-top: 60px;
 	color: #a2a2a3;
 	letter-spacing: 3px;
 	font-size: 14px;
@@ -698,8 +698,8 @@ input.btn2:hover {
 		padding-left: 13em;
 	}
 	.text-zone h1 {
-		font-size: 6em;
-		line-height: 80px;
+		font-size: 5em;
+		line-height: 70px;
 		letter-spacing: 1px;
 	}
 	#section-home .text{
@@ -712,7 +712,7 @@ input.btn2:hover {
 		font-size: 1em;
 		padding-left: 0px;
 		margin-top: 90px;
-		margin-left: -20px;
+		margin-left: 0px;
 		position: relative;
 		top: 0;
 		left: 0;
