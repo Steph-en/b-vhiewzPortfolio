@@ -279,7 +279,7 @@ header {
 
 .scroll-down {
     position: absolute;
-    right: -50px;
+    right: -30px;
     left: auto;
     bottom: 3.3em;
     display: flex;
@@ -292,7 +292,7 @@ header {
 }
 
 .scroll-down--left {
-    left: -20px;
+    left: -40px;
     right: auto;
 }
 
@@ -485,7 +485,7 @@ header {
 
 .scroll-down1 {
     position: absolute;
-    right: -20px;
+    right: -30px;
     left: auto;
     top: 170rem;
     display: flex;
@@ -498,7 +498,7 @@ header {
 }
 
 .scroll-down--left1 {
-    left: -20px;
+    left: -30px;
     right: auto;
 }
 
