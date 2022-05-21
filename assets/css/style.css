@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -278,7 +279,7 @@ header {
 
 .scroll-down {
     position: absolute;
-    right: -20px;
+    right: -50px;
     left: auto;
     bottom: 3.3em;
     display: flex;
