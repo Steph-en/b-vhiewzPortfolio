@@ -189,14 +189,14 @@ header {
 }
 
 .text-zone h1 {
-    font-size: 4em;
+    font-size: 2.5em;
     color: #fff;
-    line-height: 60px;
+    line-height: 40px;
     letter-spacing: 0.5px;
 }
 
 #section-home .text {
-    position: absolute;
+    /* position: absolute; */
 }
 
 .typed-cursor {
@@ -204,7 +204,7 @@ header {
 }
 
 .text-zone .gray-text {
-    margin-top: 60px;
+    margin-top: 40px;
     color: #a2a2a3;
     letter-spacing: 3px;
     font-size: 14px;
@@ -327,7 +327,7 @@ header {
 }
 
 #header {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--min-color);
     margin-bottom: 30px;
 }
@@ -427,8 +427,8 @@ header {
 }
 
 .fake-magic-wall ul li {
-    width: 200px;
-    height: 180px;
+    width: 100px;
+    height: 130px;
     position: relative;
     overflow: hidden;
     display: list-item;
