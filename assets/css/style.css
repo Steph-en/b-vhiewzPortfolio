@@ -6,8 +6,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+    /* overflow-x: hidden; */
 }
 
 *,
@@ -22,7 +22,8 @@ body {
     font-family: "Nunito Sans", sans-serif;
     color: #fff;
     background-color: var(--min-color2);
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
