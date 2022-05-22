@@ -48,7 +48,7 @@ $(document).ready(function() {
             outlineColour: "transparent",
             reverse: true,
             dept: 0.8,
-            maxSpeed: 0.09,
+            maxSpeed: 0.1,
             weight: true,
         }, "tags")) {
         //something went wrong hide the canvas
