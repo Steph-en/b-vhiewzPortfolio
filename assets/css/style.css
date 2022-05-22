@@ -196,7 +196,7 @@ header {
 }
 
 #section-home .text {
-    /* position: absolute; */
+    position: absolute;
 }
 
 .typed-cursor {
