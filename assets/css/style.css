@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 *,
@@ -16,6 +16,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -186,6 +187,7 @@ header {
     display: flex;
     align-items: center;
     padding-left: 1.5em;
+    overflow-x: hidden;
 }
 
 .text-zone h1 {
@@ -324,6 +326,7 @@ header {
 #section-work {
     padding: 5rem 0 5rem 1.5rem;
     position: relative;
+    overflow-x: hidden;
 }
 
 #header {
@@ -415,13 +418,12 @@ header {
 
 .fake-magic-wall {
     background-color: rgba(255, 255, 255, 0.1);
+    overflow-x: hidden;
 }
 
 .fake-magic-wall ul {
     list-style: none;
     display: flex;
-    /* display: -ms-flexbox; */
-    /* display: -webkit-box; */
     flex-wrap: wrap;
     padding-left: 2rem;
 }
@@ -535,6 +537,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 .text-zone-3 p {
@@ -558,6 +561,7 @@ header {
     width: 85%;
     margin: 100px auto 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .section-blog .fake-big-2 {
