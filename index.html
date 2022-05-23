@@ -254,7 +254,7 @@
 
         <div class="skills-charts">
             <div id="myCanvasContainer">
-                <canvas width="500" height="500" id="myCanvas">
+                <canvas width="350" height="350" id="myCanvas">
 						<ul id="tags">
 							<li>
 								<a href="#" 
@@ -525,6 +525,15 @@
 
 		<!-- js link -->
 		<script src="./assets/js/script.js"></script>
+
+		<!-- Mailer click action js -->
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+					$(".contact-button").click(function() {
+							$('.tawk-button').toggleClass('.tawk-chat-panel-inner');
+					});
+			});
+	</script>
 
 		<!--Start of Tawk.to Script-->
 		<script type="text/javascript">

@@ -6,8 +6,8 @@
 }
 
 html {
-    /* scroll-behavior: smooth; */
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -22,8 +22,7 @@ body {
     font-family: "Nunito Sans", sans-serif;
     color: #fff;
     background-color: var(--min-color2);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -280,7 +279,7 @@ header {
 
 .scroll-down {
     position: absolute;
-    right: -30px;
+    right: -35px;
     left: auto;
     bottom: 3.3em;
     display: flex;
@@ -293,7 +292,7 @@ header {
 }
 
 .scroll-down--left {
-    left: -30px;
+    left: -35px;
     right: auto;
 }
 
@@ -421,15 +420,15 @@ header {
 .fake-magic-wall ul {
     list-style: none;
     display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
+    /* display: -ms-flexbox; */
+    /* display: -webkit-box; */
     flex-wrap: wrap;
     padding-left: 2rem;
 }
 
 .fake-magic-wall ul li {
     width: 100px;
-    height: 130px;
+    height: 120px;
     position: relative;
     overflow: hidden;
     display: list-item;
@@ -486,7 +485,7 @@ header {
 
 .scroll-down1 {
     position: absolute;
-    right: -30px;
+    right: -35px;
     left: auto;
     top: 170rem;
     display: flex;
@@ -499,7 +498,7 @@ header {
 }
 
 .scroll-down--left1 {
-    left: -30px;
+    left: -35px;
     right: auto;
 }
 
@@ -671,11 +670,11 @@ header {
         left: 5px;
     }
     .scroll-down {
-        right: -30px;
+        right: -35px;
         bottom: 3.3em;
     }
     .scroll-down--left {
-        left: 120px;
+        left: 110px;
         right: auto;
     }
     .section-home::before {
@@ -744,7 +743,7 @@ header {
     /* Scroll Down */
     .scroll-down1 {
         position: absolute;
-        right: -20px;
+        right: -35px;
         left: auto;
         top: 130rem;
         display: flex;
@@ -756,7 +755,7 @@ header {
         font-size: 14px;
     }
     .scroll-down--left1 {
-        left: 120px;
+        left: 110px;
         right: auto;
     }
     .scroll-down1 span {
