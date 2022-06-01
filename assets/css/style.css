@@ -326,7 +326,7 @@ header {
 #section-work {
     padding: 5rem 0 5rem 1.5rem;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #header {
@@ -425,7 +425,7 @@ header {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 2rem;
+    padding-left: 3.5rem;
 }
 
 .fake-magic-wall ul li {
@@ -485,7 +485,7 @@ header {
 
 /* Scroll Down */
 
-.scroll-down1 {
+.scroll-up {
     position: absolute;
     right: -35px;
     left: auto;
@@ -499,12 +499,12 @@ header {
     font-size: 14px;
 }
 
-.scroll-down--left1 {
+.scroll-up--left {
     left: -35px;
     right: auto;
 }
 
-.scroll-down1 span {
+.scroll-up span {
     display: inline-block;
     animation: scroll 0.5s linear infinite alternate-reverse;
 }
@@ -518,7 +518,7 @@ header {
     }
 }
 
-.scroll-down1 .fas {
+.scroll-up .fas {
     transform: rotate(270deg);
     margin-left: 10px;
 }
@@ -543,7 +543,6 @@ header {
 .text-zone-3 p {
     margin-bottom: 15px;
     line-height: 1.5rem;
-    /* text-align: left; */
 }
 
 .tech {
@@ -561,7 +560,7 @@ header {
     width: 85%;
     margin: 100px auto 0;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .section-blog .fake-big-2 {
