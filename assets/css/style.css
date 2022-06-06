@@ -502,7 +502,7 @@ ul.social-icons {
 
 .scroll-up {
     position: absolute;
-    right: -28px;
+    right: -25px;
     left: auto;
     top: 215rem;
     display: flex;
@@ -515,7 +515,7 @@ ul.social-icons {
 }
 
 .scroll-up--left {
-    left: -28px;
+    left: -25px;
     right: auto;
 }
 
