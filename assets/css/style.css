@@ -853,6 +853,7 @@ ul.aim-list li:before {
     .section-blog {
         width: 90%;
         margin: 80px auto 0;
+        overflow: visible;
     }
     .section-blog .fake-big-2 {
         font-size: 25rem;
