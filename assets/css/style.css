@@ -162,7 +162,7 @@ header {
 }
 
 .social-icons li {
-    width: 30px;
+    width: 40px;
     font-size: 1em;
 }
 
@@ -176,6 +176,10 @@ header {
     transition: 0.3s ease-in-out;
 }
 
+ul.social-icons {
+    padding-left: 0;
+}
+
 
 /* Navigation Ends */
 
@@ -187,7 +191,7 @@ header {
     display: flex;
     align-items: center;
     padding-left: 1.5em;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .text-zone h1 {
@@ -324,8 +328,7 @@ header {
 /* Slider Section */
 
 #section-slider.section-slider {
-    width: fit-content;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .section-slider {
@@ -338,7 +341,7 @@ header {
 #section-work {
     padding: 5rem 0 5rem 1.5rem;
     position: relative;
-    /* overflow-y: hidden; */
+    overflow: hidden;
 }
 
 #header {
@@ -430,7 +433,7 @@ header {
 
 .fake-magic-wall {
     background-color: rgba(255, 255, 255, 0.1);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .fake-magic-wall ul {
@@ -501,7 +504,7 @@ header {
     position: absolute;
     right: -35px;
     left: auto;
-    top: 218rem;
+    top: 215rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -597,7 +600,7 @@ ul.aim-list li:before {
     width: 85%;
     margin: 100px auto 0;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .section-blog .fake-big-2 {
@@ -616,7 +619,7 @@ ul.aim-list li:before {
 }
 
 .post-articles {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
     height: 220px;
     background-color: var(--min-color2);
@@ -655,7 +658,7 @@ ul.aim-list li:before {
     /* Navigation */
     header {
         justify-content: flex-end;
-        /* display: none; */
+        display: none;
     }
     .btns-container {
         display: none;
