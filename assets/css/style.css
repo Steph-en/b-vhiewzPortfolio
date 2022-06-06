@@ -191,7 +191,7 @@ ul.social-icons {
     display: flex;
     align-items: center;
     padding-left: 1.5em;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .text-zone h1 {
@@ -502,7 +502,7 @@ ul.social-icons {
 
 .scroll-up {
     position: absolute;
-    right: -35px;
+    right: -28px;
     left: auto;
     top: 215rem;
     display: flex;
@@ -515,7 +515,7 @@ ul.social-icons {
 }
 
 .scroll-up--left {
-    left: -35px;
+    left: -28px;
     right: auto;
 }
 
