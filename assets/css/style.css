@@ -706,12 +706,12 @@ ul.aim-list li:before {
         margin-left: 0px;
         position: relative;
         top: 0;
-        left: 0px;
+        left: 10px;
     }
     .contact-button {
         position: relative;
         top: 0;
-        left: -.5px;
+        left: 10px;
     }
     .scroll-down {
         right: -35px;
@@ -727,25 +727,11 @@ ul.aim-list li:before {
         color: hsla(0, 0%, 82%, 0.125);
         font-size: 45rem;
         font-weight: bolder;
-        background: #07616db2;
-        background-image: url(../images/cursor.svg);
         background-repeat: no-repeat;
         width: 10%;
         height: 12rem;
         left: 55rem;
         top: -2px;
-    }
-    .section-home::after {
-        content: "@b-vhiewz";
-        position: absolute;
-        color: #0d4257ef;
-        font-size: 40px;
-        font-weight: bolder;
-        background-repeat: repeat-x;
-        width: 50%;
-        height: 20rem;
-        left: 80rem;
-        top: 22rem;
     }
     /* Slider Section */
     #section-slider.section-slider {
