@@ -17,9 +17,11 @@ const firstLogo = document.querySelector(".logo1")
 const aside = document.querySelector(".aside")
 const on = document.querySelector(".bars")
 const off = document.querySelector(".times")
+const links = document.querySelector(".links")
 
 on.addEventListener('click', () => sideBar('on'))
 off.addEventListener('click', () => sideBar('off'))
+links.addEventListener('click', () => sideBar('off'))
 
 const sideBar = (toggleState) => {
     if (toggleState === 'on') {
