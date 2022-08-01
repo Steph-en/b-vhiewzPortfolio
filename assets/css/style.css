@@ -751,7 +751,7 @@ ul.aim-list li:before {
         display: flex;
         flex-direction: column;
     }
-    #header {
+    #headers {
         font-size: 2.5rem;
     }
     .text-zone-2 {

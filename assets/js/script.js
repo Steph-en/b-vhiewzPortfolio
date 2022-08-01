@@ -35,6 +35,11 @@ const sideBar = (toggleState) => {
     }
 }
 
+// venobox
+new VenoBox({
+    selector: '.venobox',
+});
+
 // Animated H1 Text  
 var typed = new Typed(".text", {
     strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
