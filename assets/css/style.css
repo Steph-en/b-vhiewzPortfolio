@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800&display=swap");
- :root {
+
+:root {
     --min-color: #08fdd6;
     --min-color1: #555;
     --min-color2: #333;
@@ -11,8 +12,8 @@ html {
 }
 
 *,
- ::before,
- ::after {
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -312,6 +313,7 @@ ul.social-icons {
     0% {
         transform: translateX(-7px);
     }
+
     100% {
         transform: translateX(7px);
     }
@@ -321,7 +323,6 @@ ul.social-icons {
     transform: rotate(270deg);
     margin-left: 10px;
 }
-
 
 /* End of Home */
 
@@ -334,6 +335,77 @@ ul.social-icons {
 
 .section-slider {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* End of Slider */
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .row{
+    margin-left: 10rem;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    margin-left: 10rem;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+/* Carosel and Features End Here */
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
 }
 
 
@@ -530,6 +602,7 @@ ul.social-icons {
     0% {
         transform: translateX(-7px);
     }
+
     100% {
         transform: translateX(7px);
     }
@@ -650,12 +723,14 @@ ul.aim-list li:before {
     color: var(--min-color);
     transition: .3s all ease-in;
 }
+
 /* End of Blog */
 
 
 /* Media Query For Larger Screens */
 
 @media screen and (min-width: 950px) {
+
     /* Navigation */
     header {
         justify-content: flex-end;
@@ -668,42 +743,52 @@ ul.aim-list li:before {
 
     .aside {
         width: 9%;
-       
+
         height: 100%;
     }
+
     .aside-wrapper {
         height: 90%;
     }
+
     .logo-section {
         min-height: 25vh;
     }
+
     .logo img {
         width: 100px;
         height: auto;
     }
+
     .social-icons {
         margin-bottom: 0;
     }
+
     .social-icons li {
         text-align: center;
         font-size: 1em;
     }
+
     /*Home Section */
     #section-home {
         padding-left: 13em;
     }
+
     .text-zone h1 {
         font-size: 5em;
         font-weight: bold;
         line-height: 70px;
         letter-spacing: 1px;
     }
+
     #section-home .text {
         position: absolute;
     }
+
     .typed-cursor {
         display: none;
     }
+
     .text-zone .gray-text {
         font-size: 1em;
         padding-left: 0px;
@@ -713,19 +798,23 @@ ul.aim-list li:before {
         top: 0;
         left: 10px;
     }
+
     .contact-button {
         position: relative;
         top: 0;
         left: 10px;
     }
+
     .scroll-down {
         right: -35px;
         bottom: 3.3em;
     }
+
     .scroll-down--left {
         left: 110px;
         right: auto;
     }
+
     .section-home::before {
         content: "about";
         position: absolute;
@@ -736,14 +825,17 @@ ul.aim-list li:before {
         left: 55rem;
         top: -2px;
     }
+
     /* Slider Section */
     #section-slider.section-slider {
         margin-right: 6rem;
         /* overflow-x: hidden; */
     }
+
     .section-slider {
         background-color: rgba(255, 255, 255, 0.1);
     }
+
     /* Work Section */
     #section-work {
         width: 85%;
@@ -751,42 +843,51 @@ ul.aim-list li:before {
         display: flex;
         flex-direction: column;
     }
+
     #headers {
         font-size: 2.5rem;
     }
+
     .text-zone-2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .text-zone-2 p {
         width: 700px;
         font-size: 14px;
         line-height: 1.5rem;
         text-align: start;
     }
+
     .contact-buttonW {
         position: relative;
         top: 0;
         left: -80px;
     }
+
     .fake-big-2 {
         font-size: 25rem;
         font-weight: 700;
         left: 560px;
         top: 0;
     }
+
     .fake-magic-wall {
         padding-top: .8rem;
         padding-left: 12rem;
     }
+
     .fake-magic-wall ul li {
         width: 220px;
         height: 180px;
     }
+
     .fake-magic-wall .ten img {
         display: block;
     }
+
     /* Scroll Down */
     .scroll-up {
         position: absolute;
@@ -801,64 +902,78 @@ ul.aim-list li:before {
         display: block;
         font-size: 14px;
     }
+
     .scroll-up--left {
         left: 120px;
         right: auto;
     }
+
     .scroll-up span {
         display: inline-block;
         animation: scroll 0.5s linear infinite alternate-reverse;
     }
+
     @keyframes scroll {
         0% {
             transform: translateX(-7px);
         }
+
         100% {
             transform: translateX(7px);
         }
     }
+
     .scroll-up .fas {
         transform: rotate(270deg);
         margin-left: 10px;
     }
+
     /* About section */
     #section-about {
         flex-direction: row;
         padding-left: 13rem;
     }
+
     .text-zone-3 #header {
         width: 500px;
         font-size: 2.5rem;
     }
+
     .text-zone-3 p {
         font-size: 14px;
         margin-top: 0;
         width: 550px;
         text-align: left;
     }
+
     .skills-charts {
         margin-right: 15%;
     }
+
     /* Blog section */
     .section-blog {
         width: 90%;
         margin: 80px auto 0;
         overflow: visible;
     }
+
     .section-blog .fake-big-2 {
         font-size: 25rem;
         top: -250px;
         left: 70px;
     }
+
     .blog-articles {
         width: 90%;
         margin: 0 0 0 auto;
         flex-flow: row wrap;
     }
+
     .post-articles {
         width: 400px;
         height: 200px;
     }
+
     .blog-post-title h5 a {
         font-size: 1.7rem;
         line-height: 2rem;
@@ -881,38 +996,47 @@ ul.aim-list li:before {
         pointer-events: none;
         z-index: 1000;
     }
+
     @keyframes cursorAnim {
         from {
             transform: scale(1);
         }
+
         to {
             transform: scale(0.7);
         }
     }
+
     @keyframes cursorAnim2 {
         from {
             transform: scale(1);
         }
+
         to {
             transform: scale(0.4);
         }
     }
+
     @keyframes cursorAnim3 {
         0% {
             transform: scale(1);
         }
+
         50% {
             transform: scale(3);
         }
+
         100% {
             transform: scale(1);
             opacity: 0;
         }
     }
+
     .expand {
         animation: cursorAnim3 0.5s forwards;
         border: 1px solid aqua;
     }
+
     p {
         color: white;
         font-family: "arial";
@@ -920,6 +1044,7 @@ ul.aim-list li:before {
         margin-top: 50px;
         font-size: 1.4em;
     }
+
     a {
         color: teal;
     }
