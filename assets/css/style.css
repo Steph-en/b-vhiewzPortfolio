@@ -331,6 +331,9 @@ ul.social-icons {
 
 #section-slider.section-slider {
     overflow: hidden;
+    display: flex;
+    
+    /* padding-right: 20em; */
 }
 
 .section-slider {
