@@ -188,7 +188,7 @@ ul.social-icons {
 /* Home Section */
 
 #section-home {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding-left: 1.5em;
@@ -328,13 +328,11 @@ ul.social-icons {
 
 
 /* Slider Section */
-
-#section-slider.section-slider {
-    overflow: hidden;
-    display: flex;
-    
-    /* padding-right: 20em; */
-}
+    #section-slider .section-slider {
+        padding-top: 20rem;
+        /* overflow: hidden; */
+        z-index: 0;
+    }
 
 .section-slider {
     background-color: rgba(255, 255, 255, 0.1);
@@ -717,13 +715,13 @@ ul.aim-list li:before {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: var(--min-color);
     display: block;
     margin: 15px 0;
 }
 
 .blog-post-title h5 a:hover {
-    color: var(--min-color);
+    color: #fff;
     transition: .3s all ease-in;
 }
 
@@ -745,7 +743,7 @@ ul.aim-list li:before {
     }
 
     .aside {
-        width: 9%;
+        width: 8%;
 
         height: 100%;
     }
@@ -774,7 +772,7 @@ ul.aim-list li:before {
 
     /*Home Section */
     #section-home {
-        padding-left: 13em;
+        padding-left: 8.5em;
     }
 
     .text-zone h1 {
@@ -799,7 +797,7 @@ ul.aim-list li:before {
         margin-left: 0px;
         position: relative;
         top: 0;
-        left: 10px;
+        left: 9px;
     }
 
     .contact-button {
@@ -809,12 +807,12 @@ ul.aim-list li:before {
     }
 
     .scroll-down {
-        right: -35px;
-        bottom: 3.3em;
+        right: -36px;
+        bottom: 12rem;
     }
 
     .scroll-down--left {
-        left: 110px;
+        left: 94px;
         right: auto;
     }
 
@@ -822,17 +820,21 @@ ul.aim-list li:before {
         content: "about";
         position: absolute;
         color: hsla(0, 0%, 82%, 0.125);
-        font-size: 45rem;
+        font-size: 35rem;
         font-weight: bolder;
         background-repeat: no-repeat;
-        left: 55rem;
-        top: -2px;
+        left: 48rem;
+        bottom: 2rem;
     }
 
     /* Slider Section */
     #section-slider.section-slider {
-        margin-right: 6rem;
-        /* overflow-x: hidden; */
+        position: relative;
+        left: 8.1em;
+        overflow-x: hidden;
+        width: 91.5%;
+        height: 80vh;
+        padding-top: 55px;
     }
 
     .section-slider {
@@ -841,7 +843,7 @@ ul.aim-list li:before {
 
     /* Work Section */
     #section-work {
-        width: 85%;
+        width: 88%;
         margin: 0 30px 0 auto;
         display: flex;
         flex-direction: column;
@@ -867,7 +869,7 @@ ul.aim-list li:before {
     .contact-buttonW {
         position: relative;
         top: 0;
-        left: -80px;
+        left: -60px;
     }
 
     .fake-big-2 {
@@ -879,7 +881,7 @@ ul.aim-list li:before {
 
     .fake-magic-wall {
         padding-top: .8rem;
-        padding-left: 12rem;
+        padding-left: 9rem;
     }
 
     .fake-magic-wall ul li {
@@ -935,6 +937,10 @@ ul.aim-list li:before {
     #section-about {
         flex-direction: row;
         padding-left: 13rem;
+    }
+
+    #section-about h2{
+        color: #08fdd6;
     }
 
     .text-zone-3 #header {
