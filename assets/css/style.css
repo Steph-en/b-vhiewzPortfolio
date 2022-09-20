@@ -188,7 +188,7 @@ ul.social-icons {
 /* Home Section */
 
 #section-home {
-    min-height: 80vh;
+    min-height: 55vh;
     display: flex;
     align-items: center;
     padding-left: 1.5em;
@@ -289,7 +289,7 @@ ul.social-icons {
     position: absolute;
     right: -35px;
     left: auto;
-    bottom: 3.3em;
+    bottom: 26.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,7 +344,7 @@ ul.social-icons {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+/* .marketing .col-lg-4 {
     margin-top: 4rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -356,13 +356,13 @@ ul.social-icons {
 
 .marketing h2 {
     font-weight: 400;
-}
+}*/
 
 /* rtl:begin:ignore */
-.marketing .col-lg-4 p {
+/*.marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
-}
+} */
 
 /* rtl:end:ignore */
 
@@ -370,19 +370,19 @@ ul.social-icons {
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
+/* .featurette-divider {
     margin: 5rem 0;
     margin-left: 10rem;
-    /* Space out the Bootstrap <hr> more */
-}
+    Space out the Bootstrap <hr> more
+} */
 
 /* Thin out the marketing headings */
-.featurette-heading {
+/* .featurette-heading {
     font-weight: 300;
     line-height: 1;
-    /* rtl:remove */
+    rtl:remove
     letter-spacing: -.05rem;
-}
+} */
 /* Carosel and Features End Here */
 
 
@@ -416,13 +416,15 @@ ul.social-icons {
     padding: 5rem 0 5rem 1.5rem;
     position: relative;
     overflow: hidden;
+    padding: 50px 5.5px;
+
 }
 
 #header h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--min-color);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .text-zone-2 p {
@@ -435,7 +437,7 @@ ul.social-icons {
     position: absolute;
     color: rgba(85, 85, 85, 0.493);
     left: 10px;
-    bottom: -70px;
+    bottom: -50px;
     letter-spacing: -10px;
     z-index: -999;
 }
@@ -446,6 +448,8 @@ ul.social-icons {
 #section-work .contact-buttonW {
     position: relative;
     text-align: center;
+    top: 2rem;
+    left: 11rem;
     margin-top: 20px;
     text-decoration: none;
     width: 100%;
@@ -579,7 +583,7 @@ ul.social-icons {
     position: absolute;
     right: -25px;
     left: auto;
-    top: 215rem;
+    top: 175rem;
     display: flex;
     flex-direction: column;
     align-items: center;
