@@ -188,7 +188,7 @@ ul.social-icons {
 /* Home Section */
 
 #section-home {
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding-left: 1.5em;
@@ -204,8 +204,9 @@ ul.social-icons {
     letter-spacing: 0.5px;
 }
 
-#section-home .text {
+#section-home #text.text {
     position: absolute;
+    margin-top: .5rem;
 }
 
 .typed-cursor {
@@ -276,6 +277,7 @@ ul.social-icons {
     height: 100%;
     top: 0;
     left: 0;
+    margin: 0;
 }
 
 .contact-button span.text:hover {
