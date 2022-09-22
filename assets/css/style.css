@@ -892,8 +892,8 @@ ul.aim-list li:before {
     }
 
     .fake-magic-wall {
-        padding-top: .8rem;
-        padding-left: 9rem;
+        /* padding-top: .8rem; */
+        padding-left: 9.5rem;
     }
 
     .fake-magic-wall ul li {
