@@ -12,6 +12,14 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+// Animated H1 Text  
+var typed = new Typed(".text", {
+    strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+})
+
 // Toggle nav
 const firstLogo = document.querySelector(".logo1")
 const aside = document.querySelector(".aside")
@@ -39,14 +47,6 @@ const sideBar = (toggleState) => {
 new VenoBox({
     selector: '.venobox',
 });
-
-// Animated H1 Text  
-var typed = new Typed(".text", {
-    strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
-    typeSpeed: 60,
-    backSpeed: 60,
-    loop: true
-})
 
 // Jquery script for the text canvas
 $(document).ready(function() {
