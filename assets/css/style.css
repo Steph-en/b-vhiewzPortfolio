@@ -135,6 +135,7 @@ header {
     display: block;
     text-align: center;
     line-height: 3em;
+    width: max-content;
     text-decoration: none;
     color: var(--min-color1);
 }
