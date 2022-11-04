@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800&display=swap");
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
 :root {
     --min-color: #08fdd6;
     --min-color1: #555;
@@ -7,17 +10,13 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth; 
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 body {
@@ -353,52 +352,6 @@ ul.social-icons {
 
 /* End of Slider */
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-/* .marketing .col-lg-4 {
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.marketing .row{
-    margin-left: 10rem;
-}
-
-.marketing h2 {
-    font-weight: 400;
-}*/
-
-/* rtl:begin:ignore */
-/*.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-} */
-
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-/* .featurette-divider {
-    margin: 5rem 0;
-    margin-left: 10rem;
-    Space out the Bootstrap <hr> more
-} */
-
-/* Thin out the marketing headings */
-/* .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    rtl:remove
-    letter-spacing: -.05rem;
-} */
-/* Carosel and Features End Here */
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -525,7 +478,7 @@ ul.social-icons {
 
 .fake-magic-wall {
     background-color: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .fake-magic-wall ul {
@@ -537,8 +490,8 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li {
-    width: 100px;
-    height: 120px;
+    width: 143px;
+    height: 140px;
     position: relative;
     overflow: hidden;
     display: list-item;
@@ -635,6 +588,72 @@ ul.social-icons {
 
 /* End of Work */
 
+/* Expanding Cards */
+#sectiom-cards #head .container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2.cat{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--min-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.container {
+    display: flex;
+    width: 50vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    flex: .5;
+    margin: 10px;
+    position: relative;
+    left: auto;
+    transition: flex 1s ease-in-out;
+}
+
+.panel h3 {
+    font-size: 60px;
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
+    margin: 0;
+    opacity: 0;
+    /* display: none; */
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 5;
+    transition: opacity 0.3s ease-in-out 0.4s;
+}
+
+@media(max-width: 480px) {
+    .container     {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
 
 /* About Section */
 
@@ -687,7 +706,6 @@ ul.aim-list li:before {
     text-decoration: none;
     color: var(--min-color);
 }
-
 
 /* End of About */
 
@@ -847,6 +865,7 @@ ul.aim-list li:before {
         background-repeat: no-repeat;
         left: 48rem;
         bottom: 2rem;
+        /* overflow: hidden; */
     }
 
     /* Slider Section */

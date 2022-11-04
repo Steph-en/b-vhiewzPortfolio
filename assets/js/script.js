@@ -12,14 +12,6 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
-// Animated H1 Text  
-var typed = new Typed(".text", {
-    strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
-    typeSpeed: 60,
-    backSpeed: 60,
-    loop: true
-})
-
 // Toggle nav
 const firstLogo = document.querySelector(".logo1")
 const aside = document.querySelector(".aside")
@@ -42,6 +34,31 @@ const sideBar = (toggleState) => {
         off.style.display = 'none'
     }
 }
+
+
+// Expanding Cards
+const Panels = document.querySelectorAll('.panel')
+
+Panels.forEach ((panel) => {
+    panel.addEventListener ('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    Panels.forEach (panel => {
+        panel.classList.remove('active')
+    })
+}
+
+// Animated H1 Text  
+var typed = new Typed(".text", {
+    strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+})
 
 // venobox
 new VenoBox({
