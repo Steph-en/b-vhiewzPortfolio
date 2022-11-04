@@ -415,7 +415,6 @@ ul.social-icons {
     position: relative;
     text-align: center;
     top: 1rem;
-    /* left: 10rem; */
     margin-top: 20px;
     text-decoration: none;
     width: 100%;
@@ -478,7 +477,7 @@ ul.social-icons {
 
 .fake-magic-wall {
     background-color: rgba(255, 255, 255, 0.1);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .fake-magic-wall ul {
@@ -490,8 +489,8 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li {
-    width: 143px;
-    height: 140px;
+    width: 100px;
+    height: 120px;
     position: relative;
     overflow: hidden;
     display: list-item;
@@ -606,22 +605,24 @@ h2.cat{
 
 .container {
     display: flex;
-    width: 50vw;
+    flex: wrap;
+    width: 90vw;
+    /* overflow-x: ; */
 }
 
 .panel {
     background-size: auto 100%;
-    backdrop-filter: blur(10px);
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 55vh;
     border-radius: 100px;
     color: #fff;
     cursor: pointer;
     flex: .5;
-    margin: 10px;
+    margin: 5px;
     position: relative;
-    left: auto;
+    left: 4%;
+    /* right: auto; */
     transition: flex 1s ease-in-out;
 }
 
@@ -632,7 +633,6 @@ h2.cat{
     left: 25%;
     margin: 0;
     opacity: 0;
-    /* display: none; */
 }
 
 .panel.active {
@@ -653,7 +653,7 @@ h2.cat{
         display: none;
     }
 }
-
+/* End of Expanding Cards */
 
 /* About Section */
 
@@ -932,6 +932,27 @@ ul.aim-list li:before {
 
     .fake-magic-wall .ten img {
         display: block;
+    }
+
+    /* Expanding Cards */
+    .container {
+        display: flex;
+        width: 90vw;
+    }
+
+    .panel {
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        border-radius: 100px;
+        color: #fff;
+        cursor: pointer;
+        flex: .5;
+        margin: 5px;
+        position: relative;
+        left: 10%;
+        transition: flex 1s ease-in-out;
     }
 
     /* Scroll Down */
