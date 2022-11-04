@@ -621,7 +621,7 @@ h2.cat{
     flex: .5;
     margin: 5px;
     position: relative;
-    left: 4%;
+    left: auto;
     /* right: auto; */
     transition: flex 1s ease-in-out;
 }
