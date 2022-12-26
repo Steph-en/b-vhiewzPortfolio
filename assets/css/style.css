@@ -10,10 +10,12 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -340,11 +342,11 @@ ul.social-icons {
 
 
 /* Slider Section */
-    #section-slider .section-slider {
-        padding-top: 20rem;
-        /* overflow: hidden; */
-        z-index: 0;
-    }
+#section-slider .section-slider {
+    padding-top: 20rem;
+    /* overflow: hidden; */
+    z-index: 0;
+}
 
 .section-slider {
     background-color: rgba(255, 255, 255, 0.1);
@@ -588,12 +590,16 @@ ul.social-icons {
 /* End of Work */
 
 /* Expanding Cards */
+#sectiom-cards {
+    margin-right: 0;
+}
 #sectiom-cards #head .container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-h2.cat{
+h2.cat {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--min-color);
@@ -606,33 +612,26 @@ h2.cat{
 .container {
     display: flex;
     flex: wrap;
-    width: 90vw;
+    width: 60vw;
+    margin-right: 0;
+    padding-right: 200px;
     /* overflow-x: ; */
 }
 
-.panel {
+div.panel {
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 55vh;
-    border-radius: 100px;
+    border-radius: 20px;
     color: #fff;
     cursor: pointer;
     flex: .5;
     margin: 5px;
-    position: relative;
-    left: auto;
-    /* right: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: flex 1s ease-in-out;
-}
-
-.panel h3 {
-    font-size: 60px;
-    position: absolute;
-    bottom: 40%;
-    left: 25%;
-    margin: 0;
-    opacity: 0;
 }
 
 .panel.active {
@@ -644,21 +643,87 @@ h2.cat{
     transition: opacity 0.3s ease-in-out 0.4s;
 }
 
+div.container {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.container .panel {
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.container .panel:hover {
+    background-color: rgb(63, 63, 63);
+}
 @media(max-width: 480px) {
-    .container     {
+    .container {
         width: 100vw;
     }
 
-    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
         display: none;
     }
+}
+.containerc {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+}
+
+.card {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    margin-left: -50px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    height: 520px;
+    width: 100vw;
+    transform: translateY(-120px);
+    transition: 0.4s ease-out;
+    margin: 10px;
+    z-index: 1;
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
 }
 /* End of Expanding Cards */
 
 /* About Section */
 
 #section-about {
-    padding: .5rem 0 .5rem .5rem;;
+    padding: .5rem 0 .5rem .5rem;
+        ;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -668,7 +733,7 @@ h2.cat{
     overflow-x: hidden;
 }
 
-#section-about #headers h2{
+#section-about #headers h2 {
     color: var(--min-color);
 }
 
@@ -1001,7 +1066,7 @@ ul.aim-list li:before {
         padding-left: 13rem;
     }
 
-    #section-about h2{
+                #section-about h2 {
         color: #08fdd6;
     }
 
