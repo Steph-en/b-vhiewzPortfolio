@@ -696,12 +696,14 @@ div.container .panel:hover {
 .text-zone-3 p {
     margin-bottom: 15px;
     line-height: 1.5rem;
+    padding-left: 2rem;
 }
 
 ul.aim-list {
     margin: 0;
     padding-left: .1em;
     display: grid;
+    padding-left: 2rem;
 }
 
 ul.aim-list li {
