@@ -164,7 +164,6 @@ header {
     border-bottom: .01px solid #333;
 } */
 
-
 /* Social Icons */
 .social-icons {
     list-style: none;
@@ -209,6 +208,7 @@ ul.social-icons {
     color: #fff;
     line-height: 40px;
     letter-spacing: 0.5px;
+    /* padding-left: 2.5rem; */
 }
 
 #section-home #text.text {
@@ -382,10 +382,12 @@ ul.social-icons {
     font-weight: bold;
     color: var(--min-color);
     margin-bottom: 20px;
+    padding-left: 2rem;
 }
 
 .text-zone-2 p {
     line-height: 1.5;
+    padding-left: 2rem;
 }
 
 .fake-big-2 {
@@ -414,6 +416,7 @@ ul.social-icons {
     line-height: 40px;
     letter-spacing: 3px;
     color: var(--min-color);
+    padding-left: 2rem;
 }
 
 #section-work .contact-buttonW div {
@@ -473,11 +476,11 @@ ul.social-icons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    padding-left: 2.5rem;
+    padding-left: 1.8rem;
 }
 
 .fake-magic-wall ul li {
-    width: 100px;
+    width: 120px;
     height: 120px;
     position: relative;
     overflow: hidden;
@@ -574,7 +577,8 @@ ul.social-icons {
 /* Expanding Cards */
 #sectiom-cards {
     margin-right: 0;
-    padding: 0;
+    /* padding: 0; */
+    padding-left: 2rem;
 }
 
 #sectiom-cards #head .container {
@@ -834,6 +838,7 @@ ul.aim-list li:before {
         font-weight: bold;
         line-height: 70px;
         letter-spacing: 1px;
+        padding-left: 2.5rem;
     }
 
     #section-home .text {
@@ -858,6 +863,7 @@ ul.aim-list li:before {
         position: relative;
         top: 0;
         left: 10px;
+        padding-left: 2.5rem;
     }
 
     .scroll-down {
@@ -919,6 +925,7 @@ ul.aim-list li:before {
         font-size: 14px;
         line-height: 1.5rem;
         text-align: start;
+        padding-left: 2.5rem;
     }
 
     .contact-buttonW {
@@ -936,12 +943,13 @@ ul.aim-list li:before {
 
     .fake-magic-wall {
         /* padding-top: .8rem; */
-        padding-left: 10rem;
+        padding-left: 11rem;
     }
 
     .fake-magic-wall ul li {
         width: 220px;
         height: 180px;
+        /* padding-left: 3rem; */
     }
 
     .fake-magic-wall .ten img {
