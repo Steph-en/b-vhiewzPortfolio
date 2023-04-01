@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 999;
 }
 
 #logo1 {
@@ -476,7 +476,17 @@ ul.social-icons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    /* padding-left: 2.5rem; */
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 940px) {
+    .fake-magic-wall ul {
+        /* list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0; */
+        padding-left: 3rem;
+    }
 }
 
 .fake-magic-wall ul li {
@@ -532,7 +542,6 @@ ul.social-icons {
     opacity: 1;
 }
 
-
 /* Scroll U*/
 .scroll-up {
     position: absolute;
@@ -575,105 +584,11 @@ ul.social-icons {
 /* End of Work */
 
 /* Expanding Cards */
-#sectiom-cards {
-    margin-right: 0;
-    /* padding: 0; */
-    padding-left: 2rem;
-}
-
-#sectiom-cards #head .container {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-h2.cat {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--min-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.container {
-    display: flex;
-    flex: wrap;
-    width: 60vw;
-    margin-right: 0;
-    padding-right: 300px;
-    /* overflow-x: ; */
-}
-
-div.panel {
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    border-radius: 20px;
-    /* color: #fff; */
-    cursor: pointer;
-    flex: .5;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: flex 1s ease-in-out;
-}
-
-.panel a{
-    color: var(--min-color);
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-    text-decoration: none;
-}
-
-.panel.active {
-    flex: 5;
-}
-
-.panel.active a {
-    opacity: 5;
-    transition: opacity 0.3s ease-in-out 0.4s;
-}
-
-.panel.active a:hover {
-    color: #22fdd9;
-    font-weight: bolder;
-    transition: ease-in-out .5s;
-}
-
-div.container {
-    overflow: auto;
-    white-space: nowrap;
-}
-
-div.container .panel {
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(63, 63, 63);
-}
-
-div.container .panel:hover {
-    background-color: rgb(65, 65, 65);
-}
-
-@media(max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
-
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
+@media screen and (max-width: 940px) {
+    #section-cards {
         display: none;
     }
 }
-/* End of Expanding Cards */
 
 /* About Section */
 
@@ -729,7 +644,6 @@ ul.aim-list li:before {
     text-decoration: none;
     color: var(--min-color);
 }
-
 /* End of About */
 
 
@@ -859,6 +773,7 @@ ul.aim-list li:before {
         position: relative;
         top: 0;
         left: 9px;
+        /* padding-left: 2.5rem; */
     }
 
     .contact-button {
@@ -944,14 +859,12 @@ ul.aim-list li:before {
     }
 
     .fake-magic-wall {
-        /* padding-top: .8rem; */
         padding-left: 11rem;
     }
 
     .fake-magic-wall ul li {
         width: 220px;
         height: 180px;
-        /* padding-left: 3rem; */
     }
 
     .fake-magic-wall .ten img {
@@ -959,6 +872,103 @@ ul.aim-list li:before {
     }
 
     /* Expanding Cards */
+    #sectiom-cards {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    #sectiom-cards #head .container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    div.container {
+        margin: 0;
+        margin-left: 250px;
+        padding: 0 200px  0 50px;
+    }
+
+    h3.cat {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--min-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex: wrap;
+        width: 60vw;
+        margin-right: 0;
+        padding-right: 300px;
+    }
+
+    div.panel {
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+        border-radius: 20px;
+        cursor: pointer;
+        flex: .5;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: flex 1s ease-in-out;
+    }
+
+    .panel a{
+        color: var(--min-color);
+        font-size: 24px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        opacity: 0;
+        text-decoration: none;
+    }
+
+    .panel.active {
+        flex: 5;
+    }
+
+    .panel.active a {
+        opacity: 5;
+        transition: opacity 0.3s ease-in-out 0.4s;
+    }
+
+    .panel.active a:hover {
+        color: #22fdd9;
+        font-weight: bolder;
+        transition: ease-in-out .5s;
+    }
+
+    div.container {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.container .panel {
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(63, 63, 63);
+    }
+
+    div.container .panel:hover {
+        background-color: rgb(65, 65, 65);
+    }
+    /* End of Expanding Cards */
+
+    /* Portfolio */
+    #portfolio{
+        display: none;
+    }
+
     .container {
         display: flex;
         width: 90vw;
