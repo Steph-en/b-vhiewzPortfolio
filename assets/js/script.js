@@ -54,7 +54,7 @@ function removeActiveClasses() {
 
 // Animated H1 Text  
 var typed = new Typed(".text", {
-    strings: ["graphic designer.", "content creator.", "animator.", "digital artist."],
+    strings: ["graphic designer.", "content creator.", "digital artist."],
     typeSpeed: 60,
     backSpeed: 60,
     loop: true
