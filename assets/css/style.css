@@ -758,6 +758,7 @@ ul.aim-list li:before {
 
     /*Home Section */
     #section-home {
+        min-height: 70vh;
         padding-left: 8.5em;
     }
 
