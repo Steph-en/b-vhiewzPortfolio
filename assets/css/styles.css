@@ -1104,7 +1104,7 @@ section {
 }
 
 #portfolio .my-wrapper .inter h6 {
-  color: #fff;
+  color: #333;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -1153,8 +1153,8 @@ section {
 }
 
 #portfolio .my-wrapper .wrapper-box .content .nav-tabs .nav-item {
-  background: #e31c25;
-  color: #fff;
+  background: #08fdd6;
+  color: #333;
   border-radius: 0;
   margin: 0.625rem;
   transition: all ease-in-out 0.5s;
@@ -1166,18 +1166,18 @@ section {
 }
 
 #portfolio .my-wrapper .wrapper-box .content .nav-tabs .nav-item a {
-  color: #fff;
+  color: #333;
   font-size: 1rem;
   text-transform: capitalize;
   transition: all ease-in-out 0.5s;
   border: 0;
   border-radius: 0;
-  background: #e31c25;
+  background: #08fdd6;
 }
 
 #portfolio .my-wrapper .wrapper-box .content .nav-tabs .nav-item a.active {
   background: #fff;
-  color: #e31c25;
+  color: #333;
 }
 
 #portfolio .my-wrapper .wrapper-box .content .tab-content {
@@ -1373,7 +1373,7 @@ section {
   figure
   .inner-content
   span {
-  color: #fff;
+  color: #333;
   font-size: 0.875rem;
   text-transform: uppercase;
   display: inline-block;
@@ -1395,8 +1395,8 @@ section {
   .inner-content
   a {
   padding: 0.3125rem 1.125rem;
-  background: #e31c25;
-  color: #fff;
+  background: #08fdd6;
+  color: #333;
   font-size: 0.8125rem;
   letter-spacing: 0.5px;
   font-weight: 400;
@@ -1424,7 +1424,7 @@ section {
   figure
   .inner-content
   a:hover {
-  color: #e31c25;
+  color: #08fdd6;
 }
 
 #portfolio
@@ -1522,7 +1522,7 @@ section {
   ul
   li:hover
   a {
-  color: #e31c25;
+  color: #08fdd6;
 }
 
 #portfolio

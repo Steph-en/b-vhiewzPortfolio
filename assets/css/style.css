@@ -674,11 +674,11 @@ ul.aim-list li:before {
 .post-articles {
     overflow-x: hidden;
     width: 100%;
-    height: 220px;
+    height: 230px;
     background-color: var(--min-color2);
     padding: 25px;
     color: #909096;
-    box-shadow: 0 0 0 2px #222222;
+    box-shadow: 0 0 2px 2px #222222;
     margin-bottom: 30px;
 }
 
