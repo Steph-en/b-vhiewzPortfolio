@@ -47,7 +47,7 @@ header {
 
 #logo1 {
     padding: 5px;
-    margin-left: 15px;
+    margin-left: 5px;
     border-radius: 5px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.400);
@@ -80,7 +80,7 @@ header {
     left: 0;
     overflow: hidden;
     background-color: #222;
-    z-index: 1;
+    z-index: 999;
 }
 
 .show-nav {
@@ -203,13 +203,11 @@ ul.social-icons {
 }
 
 .text-zone h1 {
-    /* margin-top: 2rem; */
     font-size: 2.5em;
     font-weight: bold;
     color: #fff;
     line-height: 40px;
     letter-spacing: 0.5px;
-    /* padding-left: 2.5rem; */
 }
 
 #section-home #text.text {
@@ -228,6 +226,10 @@ ul.social-icons {
     font-size: 12px;
     position: relative;
 }
+
+/* View more button */
+
+/* End */
 
 
 /* Contact me button */
@@ -338,7 +340,6 @@ ul.social-icons {
 /* Slider Section */
 #section-slider .section-slider {
     padding-top: 20rem;
-    /* overflow: hidden; */
     z-index: 0;
 }
 
@@ -482,16 +483,15 @@ ul.social-icons {
 
 @media screen and (max-width: 940px) {
     .fake-magic-wall ul {
-        /* list-style: none;
         display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0; */
-        padding-left: 3rem;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 5px; */
     }
 }
 
 .fake-magic-wall ul li {
-    width: 100px;
+    width: 120px;
     height: 120px;
     position: relative;
     overflow: hidden;
@@ -543,12 +543,103 @@ ul.social-icons {
     opacity: 1;
 }
 
+/* #more.more{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#more.more a{
+    padding: 10px 50px 10px 50px;
+    color: #fff;
+}
+
+a.btnW{
+    background-color: var(--min-color2);
+}
+
+a p.text:hover{
+    border: 1px solid #fff;
+    color: var(--min-color);
+    cursor: pointer;
+}
+
+p.text {
+    border: 1px solid var(--min-color);
+    padding: 10px 50px 10px 50px;
+    color: #fff;
+} */
+
+
+div#show-more.show-more {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    max-width: 200px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    color: var(--min-color);
+    padding-left: 2rem;
+}
+
+div#show-more.show-more .show-btnW {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#section-work .contact-buttonW span.bgW {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    left: -6px;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--min-color);
+    transform: skewX(-19deg);
+}
+
+#section-work .contact-buttonW:hover span.bgW {
+    width: 110%;
+}
+
+#section-work .contact-buttonW span.baseW {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid var(--min-color);
+    box-sizing: border-box;
+}
+
+#section-work .contact-buttonW span.textW {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#section-work .contact-buttonW span.textW:hover {
+    color: var(--min-color2);
+    border: 1px solid #fff;
+}   
+
+
 /* Scroll U*/
 .scroll-up {
     position: absolute;
     right: -25px;
     left: auto;
-    top: 175rem;
+    top: 250rem;
     display: flex;
     flex-direction: column;
     align-items: center;

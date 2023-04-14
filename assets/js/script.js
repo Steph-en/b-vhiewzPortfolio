@@ -65,6 +65,16 @@ new VenoBox({
     selector: '.venobox',
 });
 
+// Hide and show images
+const More = document.querySelectorAll('.btnW')
+const Nact = document.querySelectorAll('.nact')
+
+function showFunc(){
+    More.addEventListener('click', () => {
+        Nact.classList.remove('nact');
+    })
+}
+
 // Jquery script for the text canvas
 $(document).ready(function() {
     if (!$("#myCanvas").tagcanvas({

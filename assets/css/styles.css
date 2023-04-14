@@ -1565,6 +1565,12 @@ section {
   transition: all ease-in-out 0.5s;
 }
 
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol .nact {
+  display: none;
+}
+
+
+
 #contact {
   background: #000;
 }
@@ -1694,5 +1700,3 @@ section {
   outline: none;
   box-shadow: none;
 }
-
-/*# sourceMappingURL=style.css.map */
