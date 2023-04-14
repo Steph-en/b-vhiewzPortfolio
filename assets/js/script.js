@@ -39,15 +39,15 @@ const sideBar = (toggleState) => {
 // Expanding Cards
 const Panels = document.querySelectorAll('.panel')
 
-Panels.forEach ((panel) => {
-    panel.addEventListener ('click', () => {
+Panels.forEach((panel) => {
+    panel.addEventListener('click', () => {
         removeActiveClasses()
         panel.classList.add('active')
     })
 })
 
 function removeActiveClasses() {
-    Panels.forEach (panel => {
+    Panels.forEach(panel => {
         panel.classList.remove('active')
     })
 }
@@ -66,25 +66,32 @@ new VenoBox({
 });
 
 // Hide and show images
-const More = document.querySelectorAll('.btnW')
-const Nact = document.querySelectorAll('.nact')
+const More = document.querySelectorAll('.show-btnW');
+const Lists = document.querySelectorAll('li');
 
-function showFunc(){
-    More.addEventListener('click', () => {
-        Nact.classList.remove('nact');
-    })
-}
+function showFunc() {
+    Lists.forEach((li) => {
+        li.addEventListener('click', () => {
+            li.classList.remove('nact');
+        });
+    });
+    // alert('hi')
+};
+
+// function hideFunc(){
+//     Nact.classList.add('.nact');
+// };
 
 // Jquery script for the text canvas
-$(document).ready(function() {
+$(document).ready(function () {
     if (!$("#myCanvas").tagcanvas({
-            textColour: "#08fdd8",
-            outlineColour: "transparent",
-            reverse: true,
-            dept: 0.8,
-            maxSpeed: 0.1,
-            weight: true,
-        }, "tags")) {
+        textColour: "#08fdd8",
+        outlineColour: "transparent",
+        reverse: true,
+        dept: 0.8,
+        maxSpeed: 0.1,
+        weight: true,
+    }, "tags")) {
         //something went wrong hide the canvas
         $("#myCanvasContainer");
     }
