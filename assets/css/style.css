@@ -380,7 +380,6 @@ ul.social-icons {
     position: relative;
     overflow: hidden;
     padding: 50px 5.5px;
-
 }
 
 #header h2 {
@@ -404,7 +403,7 @@ ul.social-icons {
     left: 10px;
     bottom: -50px;
     letter-spacing: -10px;
-    z-index: -999;
+    z-index: -1;
 }
 
 
@@ -473,7 +472,7 @@ ul.social-icons {
 
 /* Magic Wall */
 .fake-magic-wall {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.055);
     overflow: hidden;
 }
 
@@ -547,28 +546,28 @@ ul.social-icons {
     opacity: 1;
 }
 
-#show-more{
+#show-more {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
 }
 
-a.show-btnW{
+a.show-btnW {
     color: #fff;
     border: 2px solid var(--min-color);
     padding: 10px 50px 10px 50px;
 }
 
-a.show-btnW:hover{
+a.show-btnW:hover {
     color: var(--min-color2);
     background-color: var(--min-color);
 }
 
-a.btnW{
+a.btnW {
     background-color: var(--min-color2);
 }
 
-a p.text:hover{
+a p.text:hover {
     border: 1px solid #fff;
     color: var(--min-color);
     cursor: pointer;
@@ -619,7 +618,6 @@ p.text {
     transform: rotate(270deg);
     margin-left: 10px;
 }
-
 /* End of Work */
 
 /* Expanding Cards */
@@ -683,12 +681,10 @@ ul.aim-list li:before {
     text-decoration: none;
     color: var(--min-color);
 }
-
 /* End of About */
 
 
 /*Blog section  */
-
 .section-blog {
     width: 85%;
     margin: 100px auto 0;
@@ -869,8 +865,8 @@ ul.aim-list li:before {
         left: 8.1em;
         overflow-x: hidden;
         width: 91.5%;
-        height: 80vh;
-        padding-top: 55px;
+        height: 57.7vh;
+        padding: 5px 0 5px 0;
     }
 
     .section-slider {
@@ -879,7 +875,7 @@ ul.aim-list li:before {
 
     /* Work Section */
     #section-work {
-        width: 88%;
+        width: 90vw;
         margin: 0 30px 0 auto;
         display: flex;
         flex-direction: column;
@@ -903,10 +899,10 @@ ul.aim-list li:before {
         padding-left: 2.5rem;
     }
 
-    .contact-buttonW {
+    #section-work .contact-buttonW {
         position: relative;
-        top: 0;
-        left: -60px;
+        top: -1rem;
+        left: -50px;
     }
 
     .fake-big-2 {
@@ -917,7 +913,7 @@ ul.aim-list li:before {
     }
 
     .fake-magic-wall {
-        padding-left: 11rem;
+        padding-left: 8.5rem;
     }
 
     .fake-magic-wall ul li {

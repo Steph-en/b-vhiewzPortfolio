@@ -862,6 +862,7 @@ section {
 }
 
 @media screen and (max-width: 767.98px) {
+
   #resume .my-wrapper .left-wrapper,
   #resume .my-wrapper .right-wrapper {
     flex: 1 1 100%;
@@ -880,6 +881,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content,
   #resume .my-wrapper .right-wrapper .content {
     padding: 0;
@@ -898,6 +900,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .head,
   #resume .my-wrapper .right-wrapper .content .head {
     padding: 0.625rem;
@@ -913,6 +916,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .head h2,
   #resume .my-wrapper .right-wrapper .content .head h2 {
     font-size: 1rem;
@@ -929,6 +933,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .list-inner,
   #resume .my-wrapper .right-wrapper .content .list-inner {
     padding: 0.625rem 1.25rem;
@@ -948,20 +953,8 @@ section {
   padding-bottom: 0.3125rem;
 }
 
-#resume
-  .my-wrapper
-  .left-wrapper
-  .content
-  .list-inner
-  ol
-  li:nth-child(2)::before,
-#resume
-  .my-wrapper
-  .right-wrapper
-  .content
-  .list-inner
-  ol
-  li:nth-child(2)::before {
+#resume .my-wrapper .left-wrapper .content .list-inner ol li:nth-child(2)::before,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li:nth-child(2)::before {
   top: 0;
 }
 
@@ -999,6 +992,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .list-inner ol li h4,
   #resume .my-wrapper .right-wrapper .content .list-inner ol li h4 {
     font-size: 1rem;
@@ -1014,6 +1008,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .list-inner ol li h6,
   #resume .my-wrapper .right-wrapper .content .list-inner ol li h6 {
     font-size: 0.9375rem;
@@ -1029,6 +1024,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .list-inner ol li span,
   #resume .my-wrapper .right-wrapper .content .list-inner ol li span {
     font-size: 0.9375rem;
@@ -1046,6 +1042,7 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
+
   #resume .my-wrapper .left-wrapper .content .list-inner ol li p,
   #resume .my-wrapper .right-wrapper .content .list-inner ol li p {
     font-size: 0.9375rem;
@@ -1218,56 +1215,27 @@ section {
 }
 
 @media screen and (max-width: 575.98px) {
-  #portfolio
-    .my-wrapper
-    .wrapper-box
-    .content
-    .tab-content
-    .content-list
-    ol
-    li {
+  #portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li {
     width: 100%;
     max-width: 100%;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #portfolio
-    .my-wrapper
-    .wrapper-box
-    .content
-    .tab-content
-    .content-list
-    ol
-    li {
+  #portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li {
     width: 50%;
     max-width: 50%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #portfolio
-    .my-wrapper
-    .wrapper-box
-    .content
-    .tab-content
-    .content-list
-    ol
-    li {
+  #portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li {
     width: 33.3%;
     max-width: 33.3%;
   }
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs {
   display: block;
   width: 100%;
   height: 100%;
@@ -1275,76 +1243,27 @@ section {
   overflow: hidden;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs:hover
-  figure {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs:hover figure {
   transform: scale(1.2);
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs:hover
-  figure
-  .inner-content {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs:hover figure .inner-content {
   transform: translateY(0);
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs:hover
-  figure
-  .inner-content
-  a {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs:hover figure .inner-content a {
   opacity: 1;
   visibility: visible;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure {
   position: relative;
   margin: 0;
   transition: all ease-in-out 0.5s;
   overflow: hidden;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content {
   position: absolute;
   left: 0;
   top: 0;
@@ -1361,18 +1280,7 @@ section {
   transform: translateX(-100%);
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content
-  span {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content span {
   color: #333;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -1382,18 +1290,7 @@ section {
   transition: all ease-in-out 0.7s;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content
-  a {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content a {
   padding: 0.3125rem 1.125rem;
   background: #08fdd6;
   color: #333;
@@ -1412,48 +1309,15 @@ section {
   overflow: hidden;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content
-  a:hover {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content a:hover {
   color: #08fdd6;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content
-  a:hover::before {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content a:hover::before {
   width: 100%;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  ol
-  li
-  ._ok-vd_zs
-  figure
-  .inner-content
-  a::before {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list ol li ._ok-vd_zs figure .inner-content a::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1467,28 +1331,14 @@ section {
   right: 0;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all {
   display: block;
   margin: 1.25rem 0;
   position: relative;
   text-align: center;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all
-  ul
-  li {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all ul li {
   display: inline-block;
   position: relative;
   padding: 0.5rem 1.5625rem;
@@ -1500,40 +1350,15 @@ section {
   overflow: hidden;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all
-  ul
-  li:hover::before {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all ul li:hover::before {
   width: 100%;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all
-  ul
-  li:hover
-  a {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all ul li:hover a {
   color: #08fdd6;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all
-  ul
-  li::before {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all ul li::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1545,16 +1370,7 @@ section {
   transition: all ease-in-out 0.5s;
 }
 
-#portfolio
-  .my-wrapper
-  .wrapper-box
-  .content
-  .tab-content
-  .content-list
-  .link-all
-  ul
-  li
-  a {
+#portfolio .my-wrapper .wrapper-box .content .tab-content .content-list .link-all ul li a {
   display: block;
   width: 100%;
   color: #fff;
