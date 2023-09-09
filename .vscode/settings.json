@@ -1,4 +1,11 @@
 {
   "liveServer.settings.port": 5501,
-  "compile-hero.disable-compile-files-on-did-save-code": true
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "php.format.rules.arrayInitializersNewLineAfterLastElement": true,
+  "php.format.rules.declParametersNewLineBeforeRightParen": true,
+  "php.format.rules.declParametersNewLineAfterLeftParen": true,
+  "php.format.rules.callParametersNewLineBeforeRightParen": true,
+  "php.format.rules.callParametersNewLineAfterLeftParen": true,
+  "php.format.rules.arrayInitializersNewLineBeforeFirstElement": true,
+  "editor.fontSize": 12
 }

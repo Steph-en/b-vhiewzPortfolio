@@ -40,7 +40,7 @@ const sideBar = (toggleState) => {
 const Panels = document.querySelectorAll('.panel')
 
 Panels.forEach((panel) => {
-    panel.addEventListener('click', () => {
+    panel.addEventListener('mouseover', () => {
         removeActiveClasses()
         panel.classList.add('active')
     })
