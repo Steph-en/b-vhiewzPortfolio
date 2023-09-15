@@ -821,7 +821,7 @@ ul.aim-list li:before {
         margin-left: 0px;
         position: relative;
         top: 0;
-        right: 15px;
+        right: 16px;
     }
 
     .contact-button {
@@ -832,12 +832,12 @@ ul.aim-list li:before {
     }
 
     .scroll-down {
-        right: -36px;
-        bottom: 12rem;
+        right: -37px;
+        bottom: 5rem;
     }
 
     .scroll-down--left {
-        left: 94px;
+        left: 95px;
         right: auto;
     }
 
@@ -903,13 +903,12 @@ ul.aim-list li:before {
 
     .fake-magic-wall {
         position: relative;
-        left: 125px;
-        /* padding-left: ; */
+        padding-left: 10rem;
     }
 
     .fake-magic-wall ul li {
-        width: 220px;
-        height: 180px;
+        width: 210px;
+        height: 160px;
     }
 
     .fake-magic-wall .ten img {
@@ -985,17 +984,17 @@ ul.aim-list li:before {
     }
 
     .panel.active:hover {
-        transition: 0.5s ease-in-out;
+        transition: 1000ms ease-in-out;
         transform: scale(1.15) translateZ(0);
     }
 
     .container:hover .panel:not(:hover) {
-        transition: 1s ease-in-out;
-        transform: scale(.8);
+        transition: 1000ms ease-in-out;
+        transform: scale(.9);
     }
 
     .container:not(:hover){
-        transition: 1s ease;
+        transition: 1000ms ease;
     }
 
     .container:hover > .panel:not(:hover),
@@ -1005,7 +1004,7 @@ ul.aim-list li:before {
 
     .panel.active a {
         opacity: 5;
-        transition: opacity 0.3s ease-in-out 0.6s;
+        transition: opacity 300ms ease-in-out 1000ms;
     }
 
     .panel.active a:hover {
