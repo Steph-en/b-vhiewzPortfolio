@@ -950,10 +950,11 @@ ul.aim-list li:before {
     .container {
         display: flex;
         flex: wrap;
-        width: 60vw;
+        width: 50vw;
         height: 60vh;
         margin-right: 0;
         padding: 300px;
+        justify-content: center;
     }
 
     div.panel {
@@ -968,7 +969,7 @@ ul.aim-list li:before {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: flex 1s ease-in-out;
+        transition: flex .3s ease-in-out;
     }
 
     .panel a {
@@ -984,17 +985,17 @@ ul.aim-list li:before {
     }
 
     .panel.active:hover {
-        transition: 1000ms ease-in-out;
+        transition: .6s ease-in-out;
         transform: scale(1.15) translateZ(0);
     }
 
     .container:hover .panel:not(:hover) {
-        transition: 1000ms ease-in-out;
+        transition: .6s ease-in-out;
         transform: scale(.9);
     }
 
     .container:not(:hover){
-        transition: 1000ms ease;
+        transition: .6s ease;
     }
 
     .container:hover > .panel:not(:hover),
@@ -1004,13 +1005,13 @@ ul.aim-list li:before {
 
     .panel.active a {
         opacity: 5;
-        transition: opacity 300ms ease-in-out 1000ms;
+        transition: opacity 300ms ease-in-out 500ms;
     }
 
     .panel.active a:hover {
         scale: 110%;
         color: #22fdd9;
-        transition: ease-in-out .5s;
+        transition: ease-in-out 500ms;
     }
 
     div.container {
