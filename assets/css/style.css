@@ -476,8 +476,8 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li {
-    width: 170px;
-    height: 150px;
+    width: 120px;
+    height: 110px;
     position: relative;
     overflow: hidden;
     display: list-item;
@@ -903,12 +903,12 @@ ul.aim-list li:before {
 
     .fake-magic-wall {
         position: relative;
-        padding-left: 10rem;
+        padding-left: 11rem;
     }
 
     .fake-magic-wall ul li {
-        width: 210px;
-        height: 160px;
+        width: 240px;
+        height: 200px;
     }
 
     .fake-magic-wall .ten img {
@@ -974,12 +974,12 @@ ul.aim-list li:before {
 
     .panel a {
         color: var(--min-color);
-        font-size: 16px;
+        font-size: 20px;
         position: absolute;
-        bottom: 20px;
+        bottom: 60px;
         left: 20px;
         margin: 0;
-        opacity: 0;
+        opacity: 100;
         text-decoration: none;
         letter-spacing: 1.2px;
     }
@@ -1010,7 +1010,8 @@ ul.aim-list li:before {
 
     .panel.active a:hover {
         scale: 110%;
-        color: #22fdd9;
+        font-weight: bolder;
+        color: #1effda;
         transition: ease-in-out 500ms;
     }
 
