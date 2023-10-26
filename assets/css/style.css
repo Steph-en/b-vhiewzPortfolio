@@ -463,7 +463,7 @@ ul.social-icons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    /* padding-left: 2rem; */
+    padding-left: .8rem;
 }
 
 @media screen and (max-width: 940px) {
@@ -507,7 +507,7 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li a.colorbox {
-    display: block;
+    /* display: block; */
     position: absolute;
     top: 0;
     left: 0;
@@ -515,11 +515,11 @@ ul.social-icons {
     height: 100%;
     background: url(../images/circle.png) center;
     background-repeat: no-repeat;
-    opacity: 0;
+    opacity: .6;
     transition: all 150ms ease-out;
     -o-transition: all 150ms ease-out;
     -webkit-transition: all 150ms ease-out;
-    transform: scale(0.2);
+    transform: scale(.6);
 }
 
 .fake-magic-wall ul li:hover a.colorbox {
@@ -921,8 +921,8 @@ ul.aim-list li:before {
         align-items: center;
         justify-content: center;
         min-height: 100%;
-        /* margin-right: 0;
-        padding-left: 0; */
+        /* margin-left: 2rem; */
+        /* padding-left: 2rem; */
     }
 
     #sectiom-cards #head .container {
