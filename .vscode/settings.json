@@ -7,5 +7,6 @@
   "php.format.rules.callParametersNewLineBeforeRightParen": true,
   "php.format.rules.callParametersNewLineAfterLeftParen": true,
   "php.format.rules.arrayInitializersNewLineBeforeFirstElement": true,
-  "editor.fontSize": 12
+  "editor.fontSize": 12,
+  "editor.tabSize": 3
 }
