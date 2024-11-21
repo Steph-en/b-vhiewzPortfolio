@@ -35,7 +35,6 @@ const sideBar = (toggleState) => {
     }
 }
 
-
 // Expanding Cards
 const Panels = document.querySelectorAll('.panel')
 
@@ -77,10 +76,6 @@ function showFunc() {
     });
     // alert('hi')
 };
-
-// function hideFunc(){
-//     Nact.classList.add('.nact');
-// };
 
 // Jquery script for the text canvas
 $(document).ready(function () {
