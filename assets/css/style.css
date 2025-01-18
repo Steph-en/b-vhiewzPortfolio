@@ -466,12 +466,11 @@ ul.social-icons {
     padding-left: .8rem;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 600px) {
     .fake-magic-wall ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* padding-left: 5px; */
     }
 }
 
@@ -507,7 +506,6 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li a.colorbox {
-    /* display: block; */
     position: absolute;
     top: 8.3em;
     left: -25px;
@@ -526,6 +524,29 @@ ul.social-icons {
 .fake-magic-wall ul li:hover a.colorbox {
     transform: scale(0.6);
     opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .fake-magic-wall ul li a.colorbox {
+        position: absolute;
+        top: 4.2em;
+        left: -15px;
+        width: 120%;
+        height: 35%;
+        background: url(../images/circle.png) center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .9;
+        transition: all 150ms ease-out;
+        -o-transition: all 150ms ease-out;
+        -webkit-transition: all 150ms ease-out;
+        transform: scale(.5);
+    }
+    
+    .fake-magic-wall ul li:hover a.colorbox {
+        transform: scale(0.6);
+        opacity: 1;
+    }
 }
 
 #show-more {
