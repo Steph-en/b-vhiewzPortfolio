@@ -500,9 +500,9 @@ ul.social-icons {
 }
 
 .fake-magic-wall ul li:hover .magic-wall-item {
-    transform: scale(1.14);
+    /* transform: scale(1.14);
     -ms-transform: scale(1.14);
-    -webkit-transform: scale(1.14);
+    -webkit-transform: scale(1.14); */
 }
 
 .fake-magic-wall ul li a.colorbox {
@@ -511,18 +511,35 @@ ul.social-icons {
     left: -25px;
     width: 120%;
     height: 35%;
-    background: url(../images/circle.png) center;
+    /* background: url(../images/circle.png) center; */
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .9;
-    transition: all 150ms ease-out;
+    /* transition: all 150ms ease-out;
     -o-transition: all 150ms ease-out;
-    -webkit-transition: all 150ms ease-out;
-    transform: scale(.5);
+    -webkit-transition: all 150ms ease-out; */
+    /* transform: scale(.5); */
+}
+
+.fake-magic-wall ul li a.colorbox::after{
+    content: 'View Project';
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 3.4rem;
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: .1em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background-color: #047966;
+    
 }
 
 .fake-magic-wall ul li:hover a.colorbox {
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
     opacity: 1;
 }
 
