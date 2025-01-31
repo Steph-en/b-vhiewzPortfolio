@@ -344,18 +344,21 @@ ul.social-icons {
     padding: 50px 5.5px;
 }
 
-#header h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--min-color);
-    margin-bottom: 20px;
-    padding-left: 2rem;
+@media screen and (max-width: 600px) {
+    #header h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-left: 2rem;
+        color: var(--min-color);
+    }
+
+    .text-zone-2 p {
+        line-height: 1.5;
+        padding-left: 2rem;
+    }
 }
 
-.text-zone-2 p {
-    line-height: 1.5;
-    padding-left: 2rem;
-}
 
 .fake-big-2 {
     font-size: 12rem;
@@ -754,6 +757,7 @@ ul.aim-list li:before {
 
 /* Media Query For Larger Screens */
 @media screen and (min-width: 600px) {
+
     *,
     html {
         border: 0;
@@ -805,6 +809,7 @@ ul.aim-list li:before {
 
     /*Home Section */
     #section-home {
+        position: relative;
         height: 70vh;
         width: 100%;
         display: flex;
@@ -813,10 +818,11 @@ ul.aim-list li:before {
         flex-direction: row;
         padding: 0 0 0 12%;
     }
-    
+
     .text-zone {
         position: relative;
         margin: 0;
+        width: 50%;
         display: flex;
         flex-direction: column;
     }
@@ -850,58 +856,44 @@ ul.aim-list li:before {
         cursor: pointer;
     }
 
-    .scroll{
-        
+    .scroll {
+        position: absolute;
+        top: 76%;
+        left: 12%;
+        width: 85%;
+        height: 16vh;
+        display: flex;
+        justify-content: space-between;
     }
 
     .scroll-down {
-        position: absolute;
-        right: -35px;
-        left: auto;
-        bottom: 4rem;
+        width: auto;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        font-size: 0.875rem;
         align-items: center;
         justify-content: center;
         transform: rotate(90deg);
-        display: block;
-        font-size: 14px;
     }
-    
-    .scroll-down--left {
-        left: -35px;
-        right: auto;
-    }
-    
+
     .scroll-down span {
-        display: inline-block;
         animation: scroll 0.5s linear infinite alternate-reverse;
     }
-    
+
     @keyframes scroll {
         0% {
             transform: translateX(-7px);
         }
-    
+
         100% {
             transform: translateX(7px);
         }
     }
-    
+
     .scroll-down .fas {
         transform: rotate(270deg);
         margin-left: 10px;
-    }
-
-    .scroll-down{
-        display: flex;
-        flex-direction: row;
-        width: 13%;
-    }
-
-    .scroll-down {
-        right: -37px;
-        bottom: 5rem;
     }
 
     .scroll-down--left {
@@ -909,11 +901,14 @@ ul.aim-list li:before {
         right: auto;
     }
 
-    .section-home::before {
-        content: "about";
-        position: absolute;
-        left: 50rem;
-        font-size: 35rem;
+    .section-home::after {
+        content: "CREATE";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30rem;
+        width: 50%;
+        height: 100%;
         font-weight: bolder;
         background-repeat: no-repeat;
         color: hsla(0, 0%, 82%, 0.125);
@@ -931,20 +926,31 @@ ul.aim-list li:before {
 
     /* Work Section */
     #section-work {
-        width: 90vw;
-        margin: 0 30px 0 auto;
+        width: 90%;
+        height: 30vh;
+        padding: 0 0 0 12%;
+        margin: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     #headers {
+        display: flex;
+        color: var(--min-color);
+    }
+
+    #header h2 {
+        color: #25fcd8;
+        font-weight: 600;
         font-size: 2.5rem;
+        letter-spacing: 0.06em;
     }
 
     .text-zone-2 {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
 
     .text-zone-2 p {
@@ -952,7 +958,7 @@ ul.aim-list li:before {
         font-size: 14px;
         line-height: 1.5rem;
         text-align: start;
-        padding-left: 2.5rem;
+        /* padding-left: 2.5rem; */
     }
 
     #section-work .contact-buttonW {
