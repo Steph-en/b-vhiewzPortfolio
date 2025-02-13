@@ -91,10 +91,11 @@ header {
 
 .aside-wrapper {
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-section {
@@ -212,11 +213,9 @@ ul.social-icons {
 }
 
 .text-zone .gray-text {
-    /* margin-top: 30px; */
     color: #a2a2a3;
     letter-spacing: 2.5px;
     font-size: 12px;
-    /* position: relative; */
 }
 
 /* End */
@@ -284,44 +283,46 @@ ul.social-icons {
 }
 
 /* Scroll Down */
-/* .scroll-down {
-    position: absolute;
-    right: -35px;
-    left: auto;
-    bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    display: block;
-    font-size: 14px;
-}
-
-.scroll-down--left {
-    left: -35px;
-    right: auto;
-}
-
-.scroll-down span {
-    display: inline-block;
-    animation: scroll 0.5s linear infinite alternate-reverse;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(-7px);
+@media screen and (max-width: 600px) {
+    .scroll-down {
+        position: absolute;
+        right: -35px;
+        left: auto;
+        bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(90deg);
+        display: block;
+        font-size: 14px;
     }
 
-    100% {
-        transform: translateX(7px);
+    .scroll-down--left {
+        left: -35px;
+        right: auto;
+    }
+
+    .scroll-down span {
+        display: inline-block;
+        animation: scroll 0.5s linear infinite alternate-reverse;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(-7px);
+        }
+
+        100% {
+            transform: translateX(7px);
+        }
+    }
+
+    .scroll-down .fas {
+        transform: rotate(270deg);
+        margin-left: 10px;
     }
 }
-
-.scroll-down .fas {
-    transform: rotate(270deg);
-    margin-left: 10px;
-} */
 
 /* End of Home */
 
@@ -357,81 +358,81 @@ ul.social-icons {
         line-height: 1.5;
         padding-left: 2rem;
     }
-}
 
 
-.fake-big-2 {
-    font-size: 12rem;
-    font-weight: 700;
-    position: absolute;
-    color: rgba(85, 85, 85, 0.493);
-    left: 10px;
-    bottom: -50px;
-    letter-spacing: -10px;
-    z-index: -1;
-}
+    .fake-big-2 {
+        font-size: 12rem;
+        font-weight: 700;
+        position: absolute;
+        color: rgba(85, 85, 85, 0.493);
+        left: 10px;
+        bottom: -50px;
+        letter-spacing: -10px;
+        z-index: -1;
+    }
 
-/* Contact button */
-#section-work .contact-buttonW {
-    position: relative;
-    text-align: center;
-    top: 1rem;
-    margin-top: 20px;
-    text-decoration: none;
-    width: 100%;
-    height: 40px;
-    max-width: 200px;
-    display: block;
-    line-height: 40px;
-    letter-spacing: 3px;
-    color: var(--min-color);
-    padding-left: 2rem;
-}
+    /* Contact button */
+    #section-work .contact-buttonW {
+        position: relative;
+        text-align: center;
+        top: 1rem;
+        margin-top: 20px;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        max-width: 200px;
+        display: block;
+        line-height: 40px;
+        letter-spacing: 3px;
+        color: var(--min-color);
+        padding-left: 2rem;
+    }
 
-#section-work .contact-buttonW div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
+    #section-work .contact-buttonW div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
 
-#section-work .contact-buttonW span.bgW {
-    position: absolute;
-    width: 0;
-    height: 100%;
-    overflow: hidden;
-    left: -6px;
-    top: 0;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--min-color);
-    transform: skewX(-19deg);
-}
+    #section-work .contact-buttonW span.bgW {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        left: -6px;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--min-color);
+        transform: skewX(-19deg);
+    }
 
-#section-work .contact-buttonW:hover span.bgW {
-    width: 110%;
-}
+    #section-work .contact-buttonW:hover span.bgW {
+        width: 110%;
+    }
 
-#section-work .contact-buttonW span.baseW {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    border: 1px solid var(--min-color);
-    box-sizing: border-box;
-}
+    #section-work .contact-buttonW span.baseW {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border: 1px solid var(--min-color);
+        box-sizing: border-box;
+    }
 
-#section-work .contact-buttonW span.textW {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+    #section-work .contact-buttonW span.textW {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 
-#section-work .contact-buttonW span.textW:hover {
-    color: var(--min-color2);
-    border: 1px solid #fff;
+    #section-work .contact-buttonW span.textW:hover {
+        color: var(--min-color2);
+        border: 1px solid #fff;
+    }
 }
 
 /* Magic Wall */
@@ -445,7 +446,6 @@ ul.social-icons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    padding-left: .8rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -695,7 +695,9 @@ ul.aim-list li:before {
     overflow: hidden;
 }
 
-.section-blog .fake-big-2 {
+@media screen and (max-width: 600px) {}
+
+.section-blog .fake-big-3 {
     font-size: 18rem;
     font-weight: bold;
     position: absolute;
@@ -781,7 +783,8 @@ ul.aim-list li:before {
     }
 
     .aside {
-        width: 8%;
+        display: flex;
+        width: 10%;
         height: 100%;
     }
 
@@ -861,19 +864,15 @@ ul.aim-list li:before {
         top: 76%;
         left: 12%;
         width: 85%;
-        height: 16vh;
+        height: 15vh;
         display: flex;
         justify-content: space-between;
     }
 
     .scroll-down {
-        width: auto;
-        height: auto;
         display: flex;
-        flex-direction: row;
         font-size: 0.875rem;
         align-items: center;
-        justify-content: center;
         transform: rotate(90deg);
     }
 
@@ -897,27 +896,29 @@ ul.aim-list li:before {
     }
 
     .scroll-down--left {
-        left: 95px;
         right: auto;
     }
 
     .section-home::after {
         content: "CREATE";
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 30rem;
         width: 50%;
         height: 100%;
+        display: flex;
         font-weight: bolder;
+        align-items: center;
+        justify-content: center;
         background-repeat: no-repeat;
         color: hsla(0, 0%, 82%, 0.125);
     }
 
     /* Slider Section */
     #section-slider.section-slider {
-        position: relative;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 0 0 10%;
     }
 
     .section-slider {
@@ -925,14 +926,15 @@ ul.aim-list li:before {
     }
 
     /* Work Section */
-    #section-work {
+    section#section-work.section-work {
         width: 90%;
         height: 30vh;
-        padding: 0 0 0 12%;
-        margin: 0;
+        margin: 0 10%;
+        padding: 0 4%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     #headers {
@@ -950,37 +952,101 @@ ul.aim-list li:before {
     .text-zone-2 {
         display: flex;
         align-items: center;
+        justify-content: center;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .text-zone-2 p {
         width: 700px;
         font-size: 14px;
-        line-height: 1.5rem;
         text-align: start;
-        /* padding-left: 2.5rem; */
+        line-height: 1.4rem;
     }
 
+    /* Contact button */
     #section-work .contact-buttonW {
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        max-width: 200px;
+        line-height: 40px;
+        letter-spacing: 0.187rem;
+        color: var(--min-color);
+    }
+
+    #section-work .contact-buttonW div {
         position: relative;
-        top: -1rem;
-        left: -50px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #section-work .contact-buttonW span.bgW {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        left: -6px;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--min-color);
+        transform: skewX(-19deg);
+    }
+
+    #section-work .contact-buttonW:hover span.bgW {
+        width: 110%;
+    }
+
+    #section-work .contact-buttonW span.baseW {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border: 1px solid var(--min-color);
+        box-sizing: border-box;
+    }
+
+    #section-work .contact-buttonW span.textW {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #section-work .contact-buttonW span.textW:hover {
+        color: var(--min-color2);
+        border: 1px solid #fff;
     }
 
     .fake-big-2 {
-        font-size: 25rem;
+        position: absolute;
+        font-size: 20rem;
         font-weight: 700;
-        left: 560px;
+        left: 20%;
         top: 0;
+        z-index: -99;
+        color: hsla(0, 0%, 82%, 0.125);
+        text-transform: uppercase;
     }
 
     .fake-magic-wall {
-        position: relative;
-        padding-left: 11rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 12%;
+    }
+
+    .fake-magic-wall ul{
+        display: flex;
     }
 
     .fake-magic-wall ul li {
-        width: 240px;
+        width: .1%;
         height: 200px;
     }
 
