@@ -51,11 +51,11 @@ function removeActiveClasses() {
     })
 }
 
-// Animated H1 Text  
+// Animated H2 Text  
 var typed = new Typed(".text", {
-    strings: ["graphic designer.", "content creator.", "digital artist."],
-    typeSpeed: 60,
-    backSpeed: 60,
+    strings: ["Graphic Designer.", "Content Creator.", "Digital Artist."],
+    typeSpeed: 50,
+    backSpeed: 50,
     loop: true
 })
 
