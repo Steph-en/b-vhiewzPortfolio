@@ -481,11 +481,11 @@ ul.social-icons {
     object-fit: cover;
 }
 
-.fake-magic-wall ul li:hover .magic-wall-item {
-    /* transform: scale(1.14);
+/* .fake-magic-wall ul li:hover .magic-wall-item {
+    transform: scale(1.14);
     -ms-transform: scale(1.14);
-    -webkit-transform: scale(1.14); */
-}
+    -webkit-transform: scale(1.14);
+} */
 
 .fake-magic-wall ul li a.colorbox {
     position: absolute;
@@ -493,35 +493,29 @@ ul.social-icons {
     left: -25px;
     width: 120%;
     height: 35%;
-    /* background: url(../images/circle.png) center; */
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .9;
-    /* transition: all 150ms ease-out;
-    -o-transition: all 150ms ease-out;
-    -webkit-transition: all 150ms ease-out; */
-    /* transform: scale(.5); */
+    transition: all 150ms ease-out;
 }
 
 .fake-magic-wall ul li a.colorbox::after {
     content: 'View Project';
-    height: 5rem;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-left: 3.4rem;
     color: #ffffff;
     font-weight: bolder;
     letter-spacing: .1em;
-    font-size: 1.3em;
     text-transform: uppercase;
     background-color: #047966;
-
+    overflow: visible;
 }
 
 .fake-magic-wall ul li:hover a.colorbox {
-    /* transform: scale(0.6); */
+    transform: scale(1.03);
     opacity: 1;
 }
 
@@ -813,8 +807,8 @@ ul.aim-list li:before {
     /*Home Section */
     #section-home {
         position: relative;
-        height: 70vh;
         width: 100%;
+        height: 70vh;
         display: flex;
         overflow: hidden;
         align-items: center;
@@ -926,7 +920,7 @@ ul.aim-list li:before {
     }
 
     /* Work Section */
-    section#section-work.section-work {
+    .section-work {
         width: 90%;
         height: 30vh;
         margin: 0 10%;
@@ -1036,18 +1030,19 @@ ul.aim-list li:before {
     .fake-magic-wall {
         width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 0 0 0 12%;
+        justify-content: center;
+        padding: 0 0 0 10%;
     }
 
     .fake-magic-wall ul{
         display: flex;
+        flex-direction: row;
     }
 
     .fake-magic-wall ul li {
-        width: .1%;
-        height: 200px;
+        width: 15vw;
+        height: 20vh;
     }
 
     .fake-magic-wall .ten img {
@@ -1055,149 +1050,121 @@ ul.aim-list li:before {
     }
 
     /* Expanding Cards */
-    #sectiom-cards {
+    #section-cards {
+        width: 90vw;
+        height: 60vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100%;
-        /* margin-left: 2rem; */
-        /* padding-left: 2rem; */
-    }
-
-    #sectiom-cards #head .container {
-        display: flex;
         flex-direction: column;
-        overflow: hidden;
+        margin: 0 0 0 10%;
+        padding: 0;
     }
 
-    div.container {
-        margin: 0;
-        margin-left: 250px;
-        padding: 50px 200px 0 50px;
-    }
-
-    h3.cat {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: var(--min-color);
+    #cat-head{
+        height: 10vh;
+        width: 80vw;
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 20px;
+        justify-content: center;
+        color: var(--min-color);
+        /* margin: 0 0 0 12%; */
+    }
+
+    #cat-head h2{
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: 0.05em;
     }
 
     .container {
-        display: flex;
+        width: auto;
+        flex: 0.5;
+        margin: 0;
         flex: wrap;
-        width: 50vw;
-        height: 60vh;
-        margin-right: 0;
-        padding: 300px;
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
 
-    div.panel {
-        background-size: auto 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 50vh;
-        border-radius: 20px;
+    .container .panel {
         cursor: pointer;
-        flex: 0.5;
-        margin: 5px;
+        height: 50vh;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         transition: flex .3s ease-in-out;
+        border-radius: 20px;
         overflow: hidden;
     }
 
-    .panel a {
-        color: var(--min-color);
-        font-size: 20px;
-        position: absolute;
-        bottom: 0px;
-        background-color: #0000006b;
-        background-position: cover;
-        padding: 5px 100px 5px 30px;
-        left: 0;
-        margin: 0;
-        opacity: 100;
-        text-decoration: none;
-        letter-spacing: 1.2px;
+    .panel {
+        cursor: pointer;
+        flex: 0.5;
+        margin: 5px;
+        height: 60vh;
+        width: 100vw;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: flex 1s ease-in-out;
     }
-
+    
+    .panel a {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0000006b;
+        background-position: center;
+        background-size: contain;
+        color: var(--min-color);
+        letter-spacing: .1rem;
+        font-weight: 600;
+        font-size: 20px;
+        opacity: 100;
+    }
+    
     .panel.active:hover {
-        transition: .6s ease-in-out;
-        transform: scale(1.15) translateZ(0);
+        transition: .5s ease-in-out;
+        transform: scale(1) translateZ(0);
     }
 
     .container:hover .panel:not(:hover) {
-        transition: .6s ease-in-out;
         transform: scale(.9);
+        transition: .5s ease-in-out;
     }
 
     .container:not(:hover) {
-        transition: .6s ease;
+        transition: .5s ease;
     }
 
     .container:hover>.panel:not(:hover),
     .container:hover>.panel:not(:hover) {
-        filter: brightness(.5) saturate(0) contrast(1.2) blur(5px);
+        filter: brightness(1) saturate(0) contrast(1) blur(5px);
     }
 
     .panel.active a {
         opacity: 5;
-        transition: opacity 300ms ease-in-out 500ms;
+        transition: opacity 100ms ease-in-out 200ms;
     }
 
     .panel.active a:hover {
-        scale: 110%;
-        font-weight: bolder;
+        scale: 100%;
         color: #1effda;
-        transition: ease-in-out 500ms;
+        font-weight: bolder;
+        transition: ease-in-out 100ms;
     }
-
-    div.container {
-        overflow: auto;
-        white-space: nowrap;
-    }
-
-    div.container .panel {
-        padding: 10px;
-        text-decoration: none;
-        background-color: rgb(63, 63, 63);
-    }
-
-    div.container .panel:hover {
-        background-color: rgb(65, 65, 65);
-    }
-
-    /* End of Expanding Cards */
 
     /* Portfolio */
     #portfolio {
         display: none;
-    }
-
-    .container {
-        display: flex;
-        width: 90vw;
-    }
-
-    .panel {
-        background-size: auto 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 60vh;
-        border-radius: 100px;
-        color: #fff;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 5px;
-        position: relative;
-        left: 10%;
-        transition: flex 1s ease-in-out;
     }
 
     /* Scroll Down */
@@ -1207,12 +1174,12 @@ ul.aim-list li:before {
         left: auto;
         top: 160rem;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         transform: rotate(90deg);
-        display: block;
         font-size: 14px;
+        display: block;
     }
 
     .scroll-up--left {
@@ -1241,29 +1208,32 @@ ul.aim-list li:before {
     }
 
     /* About section */
-    #section-about {
+    .section-about {
+        width: 90vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
-        padding-left: 20rem;
+        padding: 0;
     }
-
-    #section-about h2 {
+    
+    .text-zone-3 #header h2 {
         color: #08fdd6;
-    }
-
-    .text-zone-3 #header {
-        width: 500px;
+        font-weight: 600;
         font-size: 2.5rem;
+        letter-spacing: .05em;
     }
 
     .text-zone-3 p {
-        font-size: 14px;
-        margin-top: 0;
         width: 550px;
+        margin-top: 0;
         text-align: left;
+        font-size: 0.8rem;
     }
 
     .skills-charts {
-        margin-right: 15%;
+        /* margin-right: 15%; */
     }
 
     /* Blog section */
