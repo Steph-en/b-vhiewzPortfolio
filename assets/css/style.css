@@ -218,6 +218,12 @@ ul.social-icons {
     font-size: 12px;
 }
 
+@media screen and (max-width: 820px) {
+    .skills-charts {
+        display: none;
+    }
+}
+
 /* End */
 
 /* Contact me button */
@@ -283,7 +289,7 @@ ul.social-icons {
 }
 
 /* Scroll Down */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     .scroll-down {
         position: absolute;
         right: -35px;
@@ -345,7 +351,7 @@ ul.social-icons {
     padding: 50px 5.5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     #header h2 {
         font-size: 1.5rem;
         font-weight: bold;
@@ -448,7 +454,7 @@ ul.social-icons {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     .fake-magic-wall ul {
         display: flex;
         justify-content: center;
@@ -519,7 +525,7 @@ ul.social-icons {
     opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     .fake-magic-wall ul li a.colorbox {
         position: absolute;
         top: 4.2em;
@@ -618,7 +624,7 @@ p.text {
 /* End of Work */
 
 /* Expanding Cards */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
     #section-cards {
         display: none;
     }
@@ -689,7 +695,7 @@ ul.aim-list li:before {
     overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 820px) {}
 
 .section-blog .fake-big-3 {
     font-size: 18rem;
@@ -752,7 +758,7 @@ ul.aim-list li:before {
 /* End of Blog */
 
 /* Media Query For Larger Screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 821px) {
 
     *,
     html {
@@ -805,14 +811,15 @@ ul.aim-list li:before {
     }
 
     /*Home Section */
-    #section-home {
+    #section-home.section-home {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 70vh;
         display: flex;
         overflow: hidden;
-        align-items: center;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         padding: 0 0 0 12%;
     }
 
@@ -849,8 +856,28 @@ ul.aim-list li:before {
         font-size: 1em;
     }
 
+    .section-home::after {
+        content: "CREATE";
+        position: absolute;
+        left: 3%;
+        font-size: 30rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        color: hsla(0, 0%, 82%, 0.125);
+        z-index: -99;
+    }
+
     .contact-button:hover {
         cursor: pointer;
+    }
+
+    .skills-chart {
+        width: 50%;
     }
 
     .scroll {
@@ -891,19 +918,6 @@ ul.aim-list li:before {
 
     .scroll-down--left {
         right: auto;
-    }
-
-    .section-home::after {
-        content: "CREATE";
-        font-size: 30rem;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        font-weight: bolder;
-        align-items: center;
-        justify-content: center;
-        background-repeat: no-repeat;
-        color: hsla(0, 0%, 82%, 0.125);
     }
 
     /* Slider Section */
@@ -1208,14 +1222,17 @@ ul.aim-list li:before {
     }
 
     /* About section */
-    .section-about {
-        width: 90vw;
+    #section-about.section-about {
+        padding: 0;
+        width: 85%;
         height: 60vh;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
-        padding: 0;
+        justify-content: space-between;
+        margin: 0 0 0 12%;
+        overflow: visible;
     }
     
     .text-zone-3 #header h2 {
@@ -1232,8 +1249,15 @@ ul.aim-list li:before {
         font-size: 0.8rem;
     }
 
-    .skills-charts {
-        /* margin-right: 15%; */
+    .fake-big-3 {
+        position: absolute;
+        font-size: 25rem;
+        font-weight: 700;
+        left: 20%;
+        top: 0;
+        z-index: -99;
+        color: hsla(0, 0%, 82%, 0.125);
+        text-transform: uppercase;
     }
 
     /* Blog section */
@@ -1243,10 +1267,15 @@ ul.aim-list li:before {
         overflow: visible;
     }
 
-    .section-blog .fake-big-2 {
+    .section-blog .fake-big-4 {
+        position: absolute;
         font-size: 25rem;
-        top: -250px;
-        left: 70px;
+        font-weight: 700;
+        left: 20%;
+        top: 0;
+        z-index: -99;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 82%, 0.125);
     }
 
     .blog-articles {
