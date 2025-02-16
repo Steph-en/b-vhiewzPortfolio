@@ -1232,6 +1232,7 @@ ul.aim-list li:before {
         justify-content: center;
         justify-content: space-between;
         margin: 0 0 0 12%;
+        padding: 0 10% 0 0;
         overflow: visible;
     }
     
