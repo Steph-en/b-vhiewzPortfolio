@@ -487,12 +487,6 @@ ul.social-icons {
     object-fit: cover;
 }
 
-/* .fake-magic-wall ul li:hover .magic-wall-item {
-    transform: scale(1.14);
-    -ms-transform: scale(1.14);
-    -webkit-transform: scale(1.14);
-} */
-
 .fake-magic-wall ul li a.colorbox {
     position: absolute;
     top: 8.3em;
@@ -528,22 +522,32 @@ ul.social-icons {
 @media screen and (max-width: 820px) {
     .fake-magic-wall ul li a.colorbox {
         position: absolute;
-        top: 4.2em;
-        left: -15px;
-        width: 120%;
-        height: 35%;
-        background: url(../images/circle.png) center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         opacity: .9;
         transition: all 150ms ease-out;
-        -o-transition: all 150ms ease-out;
-        -webkit-transition: all 150ms ease-out;
-        transform: scale(.5);
     }
-
+    
+    .fake-magic-wall ul li a.colorbox::after {
+        content: 'View Project';
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: #ffffff;
+        overflow: visible;
+        font-size: .6rem;
+        font-weight: bolder;
+        align-items: center;
+        letter-spacing: .1em;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: #047966a7;
+    }
+    
     .fake-magic-wall ul li:hover a.colorbox {
-        transform: scale(0.6);
+        transform: scale(1.03);
         opacity: 1;
     }
 }
@@ -859,8 +863,8 @@ ul.aim-list li:before {
     .section-home::after {
         content: "CREATE";
         position: absolute;
-        left: 3%;
         font-size: 30rem;
+        left: 3%;
         width: 100%;
         height: 100%;
         display: flex;
@@ -959,10 +963,10 @@ ul.aim-list li:before {
 
     .text-zone-2 {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         justify-content: space-between;
-        flex-direction: row;
     }
 
     .text-zone-2 p {
@@ -994,14 +998,14 @@ ul.aim-list li:before {
 
     #section-work .contact-buttonW span.bgW {
         position: absolute;
-        width: 0;
         height: 100%;
-        overflow: hidden;
-        left: -6px;
+        width: 0;
         top: 0;
+        left: -6px;
+        overflow: hidden;
+        transform: skewX(-19deg);
         transition: all 0.3s ease-in-out;
         background-color: var(--min-color);
-        transform: skewX(-19deg);
     }
 
     #section-work .contact-buttonW:hover span.bgW {
@@ -1037,8 +1041,8 @@ ul.aim-list li:before {
         left: 20%;
         top: 0;
         z-index: -99;
-        color: hsla(0, 0%, 82%, 0.125);
         text-transform: uppercase;
+        color: hsla(0, 0%, 82%, 0.125);
     }
 
     .fake-magic-wall {
@@ -1065,14 +1069,14 @@ ul.aim-list li:before {
 
     /* Expanding Cards */
     #section-cards {
+        padding: 0;
         width: 90vw;
         height: 60vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         margin: 0 0 0 10%;
-        padding: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #cat-head{
@@ -1232,7 +1236,6 @@ ul.aim-list li:before {
         justify-content: center;
         justify-content: space-between;
         margin: 0 0 0 12%;
-        padding: 0 10% 0 0;
         overflow: visible;
     }
     
@@ -1252,12 +1255,12 @@ ul.aim-list li:before {
 
     .fake-big-3 {
         position: absolute;
-        font-size: 25rem;
+        font-size: 40rem;
         font-weight: 700;
-        left: 20%;
-        top: 0;
+        left: -20%;
+        top: -35%;
         z-index: -99;
-        color: hsla(0, 0%, 82%, 0.125);
+        color: hsla(0, 0%, 82%, 0.058);
         text-transform: uppercase;
     }
 
@@ -1296,12 +1299,11 @@ ul.aim-list li:before {
     }
 }
 
-
 /* Cursor */
 @media only screen and (min-width: 1024px) {
     .cursor {
-        width: 15px;
-        height: 15px;
+        width: 1rem;
+        height: 1rem;
         border: 1px solid #987;
         border-radius: 50%;
         position: absolute;
