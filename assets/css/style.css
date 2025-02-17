@@ -86,7 +86,7 @@ header {
 
 .show-nav {
     height: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .aside-wrapper {
@@ -134,7 +134,6 @@ header {
 
 /* Navigation Links */
 .nav-links a {
-    /* position: relative; */
     display: flex;
     text-align: center;
     line-height: 3em;
@@ -183,110 +182,117 @@ ul.social-icons {
     padding-left: 0;
 }
 
-/* Navigation Ends */
-
 /* Home Section */
-#section-home {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    padding-left: 1.5em;
-    padding-bottom: 0;
-    overflow-x: hidden;
-}
-
-.text-zone h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #fff;
-    line-height: 40px;
-    letter-spacing: 0.5px;
-}
-
-#section-home #text.text {
-    position: absolute;
-    margin-top: 0.5rem;
-}
-
-.typed-cursor {
-    display: none;
-}
-
-.text-zone .gray-text {
-    color: #a2a2a3;
-    letter-spacing: 2.5px;
-    font-size: 12px;
-}
-
 @media screen and (max-width: 820px) {
+    #section-home {
+        padding: 0;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-zone .desktop {
+        display: none;
+    }
+
+    .text-zone h1.mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #fff;
+        line-height: 50px;
+        letter-spacing: 0.5px;
+    }
+
+    #section-home #text.text {
+        position: absolute;
+        width: fit-content;
+        top: 48%;
+        left: 23%;
+        transform: translate(-50, 50);
+    }
+
+    .typed-cursor {
+        display: none;
+    }
+
+    .text-zone .gray-text {
+        color: #a2a2a3;
+        letter-spacing: 2.5px;
+        font-size: 12px;
+    }
+
+    /* Contact me button */
+    .contact-button {
+        /* position: relative; */
+        width: auto;
+        height: 40px;
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        /* max-width: 200px; */
+        display: block;
+        line-height: 40px;
+        letter-spacing: 3px;
+        color: var(--min-color);
+    }
+
+    .contact-button div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    .contact-button span.bg {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        left: -6px;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--min-color);
+        transform: skewX(-19deg);
+    }
+
+    .contact-button:hover span.bg {
+        width: 110%;
+    }
+
+    .contact-button span.base {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border: 1px solid var(--min-color);
+        box-sizing: border-box;
+    }
+
+    .contact-button span.text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
     .skills-charts {
         display: none;
     }
 }
 
-/* End */
-
-/* Contact me button */
-.contact-button {
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    text-decoration: none;
-    width: 100%;
-    height: 40px;
-    max-width: 200px;
-    display: block;
-    line-height: 40px;
-    letter-spacing: 3px;
-    color: var(--min-color);
-}
-
-.contact-button div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.contact-button span.bg {
-    position: absolute;
-    width: 0;
-    height: 100%;
-    overflow: hidden;
-    left: -6px;
-    top: 0;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--min-color);
-    transform: skewX(-19deg);
-}
-
-.contact-button:hover span.bg {
-    width: 110%;
-}
-
-.contact-button span.base {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    border: 1px solid var(--min-color);
-    box-sizing: border-box;
-}
-
-.contact-button span.text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-
-.contact-button span.text:hover {
-    color: var(--min-color2);
-    border: 1px solid #fff;
-}
 
 /* Scroll Down */
 @media screen and (max-width: 820px) {
@@ -497,7 +503,7 @@ ul.social-icons {
         opacity: .9;
         transition: all 150ms ease-out;
     }
-    
+
     .fake-magic-wall ul li a.colorbox::after {
         content: 'View Project';
         height: 100%;
@@ -513,7 +519,7 @@ ul.social-icons {
         text-transform: uppercase;
         background-color: #047966a7;
     }
-    
+
     .fake-magic-wall ul li:hover a.colorbox {
         transform: scale(1.03);
         opacity: 1;
@@ -603,7 +609,6 @@ p.text {
 }
 
 /* About Section */
-
 #section-about {
     padding: 1.1rem 0 1.1rem 1.1rem;
     margin-top: 100px;
@@ -656,8 +661,6 @@ ul.aim-list li:before {
     text-decoration: none;
     color: var(--min-color);
 }
-
-/* End of About */
 
 /*Blog section  */
 .section-blog {
@@ -803,7 +806,11 @@ ul.aim-list li:before {
         flex-direction: column;
     }
 
-    .text-zone h1 {
+    .text-zone h1.mobile {
+        display: none;
+    }
+
+    .text-zone h1.desktop {
         font-size: 5em;
         font-weight: bold;
         line-height: 90%;
@@ -842,6 +849,68 @@ ul.aim-list li:before {
         background-repeat: no-repeat;
         color: hsla(0, 0%, 82%, 0.125);
         z-index: -99;
+    }
+
+    /* Contact me button */
+    .contact-button {
+        position: relative;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        max-width: 200px;
+        display: block;
+        line-height: 40px;
+        letter-spacing: 3px;
+        color: var(--min-color);
+    }
+
+    .contact-button div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact-button span.bg {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        left: -6px;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--min-color);
+        transform: skewX(-19deg);
+    }
+
+    .contact-button:hover span.bg {
+        width: 110%;
+    }
+
+    .contact-button span.base {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border: 1px solid var(--min-color);
+        box-sizing: border-box;
+    }
+
+    .contact-button span.text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .contact-button span.text:hover {
+        color: var(--min-color2);
+        border: 1px solid #fff;
     }
 
     .contact-button:hover {
@@ -1021,7 +1090,7 @@ ul.aim-list li:before {
         padding: 0 0 0 10%;
     }
 
-    .fake-magic-wall ul{
+    .fake-magic-wall ul {
         display: flex;
         flex-direction: row;
     }
@@ -1046,7 +1115,7 @@ ul.aim-list li:before {
         background-repeat: no-repeat;
         transition: all 150ms ease-out;
     }
-    
+
     .fake-magic-wall ul li a.colorbox::after {
         content: 'View Project';
         height: 100%;
@@ -1061,7 +1130,7 @@ ul.aim-list li:before {
         background-color: #047966;
         overflow: visible;
     }
-    
+
     .fake-magic-wall ul li:hover a.colorbox {
         transform: scale(1.03);
         opacity: 1;
@@ -1079,7 +1148,7 @@ ul.aim-list li:before {
         justify-content: center;
     }
 
-    #cat-head{
+    #cat-head {
         height: 10vh;
         width: 80vw;
         display: flex;
@@ -1089,7 +1158,7 @@ ul.aim-list li:before {
         /* margin: 0 0 0 12%; */
     }
 
-    #cat-head h2{
+    #cat-head h2 {
         font-weight: 600;
         font-size: 2.5rem;
         letter-spacing: 0.05em;
@@ -1132,7 +1201,7 @@ ul.aim-list li:before {
         background-repeat: no-repeat;
         transition: flex 1s ease-in-out;
     }
-    
+
     .panel a {
         width: 100vw;
         height: 50vh;
@@ -1148,7 +1217,7 @@ ul.aim-list li:before {
         font-size: 20px;
         opacity: 100;
     }
-    
+
     .panel.active:hover {
         transition: .5s ease-in-out;
         transform: scale(1) translateZ(0);
@@ -1238,7 +1307,7 @@ ul.aim-list li:before {
         margin: 0 0 0 12%;
         overflow: visible;
     }
-    
+
     .text-zone-3 #header h2 {
         color: #08fdd6;
         font-weight: 600;
@@ -1276,9 +1345,9 @@ ul.aim-list li:before {
 
     .section-blog .fake-big-4 {
         position: absolute;
-        font-size: 25rem;
+        font-size: 28rem;
         font-weight: 700;
-        top: -45%;
+        top: -58%;
         left: 10%;
         z-index: -99;
         text-transform: uppercase;

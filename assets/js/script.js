@@ -74,7 +74,6 @@ function showFunc() {
             li.classList.remove('nact');
         });
     });
-    // alert('hi')
 };
 
 // Jquery script for the text canvas
