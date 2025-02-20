@@ -291,11 +291,8 @@ ul.social-icons {
     .skills-charts {
         display: none;
     }
-}
 
-
-/* Scroll Down */
-@media screen and (max-width: 820px) {
+    /* Scroll Down */
     .scroll-down {
         position: absolute;
         right: -35px;
@@ -336,8 +333,6 @@ ul.social-icons {
     }
 }
 
-/* End of Home */
-
 /* Slider Section */
 #section-slider .section-slider {
     padding-top: 20rem;
@@ -346,8 +341,6 @@ ul.social-icons {
 .section-slider {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-/* End of Slider */
 
 /* Work Section */
 #section-work {
@@ -1096,8 +1089,11 @@ ul.aim-list li:before {
     }
 
     .fake-magic-wall ul li {
-        width: 15vw;
-        height: 20vh;
+        position: relative;
+        width: 15rem;
+        height: 11rem;
+        overflow: hidden;
+        display: list-item;
     }
 
     .fake-magic-wall .ten img {
@@ -1127,7 +1123,7 @@ ul.aim-list li:before {
         font-weight: bolder;
         letter-spacing: .1em;
         text-transform: uppercase;
-        background-color: #047966;
+        background-color: #047966dc;
         overflow: visible;
     }
 
@@ -1206,6 +1202,7 @@ ul.aim-list li:before {
         width: 100vw;
         height: 50vh;
         display: flex;
+        text-align: center;
         align-items: center;
         justify-content: center;
         background-color: #0000006b;
@@ -1213,9 +1210,10 @@ ul.aim-list li:before {
         background-size: contain;
         color: var(--min-color);
         letter-spacing: .1rem;
-        font-weight: 600;
+        font-weight: bolder;
         font-size: 20px;
         opacity: 100;
+        text-transform: uppercase;
     }
 
     .panel.active:hover {
