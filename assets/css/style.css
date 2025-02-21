@@ -194,6 +194,17 @@ ul.social-icons {
         justify-content: center;
     }
 
+    .text-zone {
+        position: relative;
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .text-zone .desktop {
         display: none;
     }
@@ -210,12 +221,12 @@ ul.social-icons {
         letter-spacing: 0.5px;
     }
 
-    #section-home #text.text {
+    h2#text.text {
         position: absolute;
-        width: fit-content;
-        top: 48%;
-        left: 23%;
-        transform: translate(-50, 50);
+        width: 100%;
+        top: 50%;
+        right: 0;
+        transform: translate(-.50%, -50%);
     }
 
     .typed-cursor {
@@ -224,17 +235,16 @@ ul.social-icons {
 
     .text-zone .gray-text {
         color: #a2a2a3;
-        letter-spacing: 2.5px;
+        letter-spacing:.1rem;
         font-size: 12px;
     }
 
     /* Contact me button */
     .contact-button {
-        /* position: relative; */
-        width: auto;
+        width: 60%;
         height: 40px;
         display: flex;
-        margin-top: 15px;
+        margin-top: 1rem;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -250,30 +260,26 @@ ul.social-icons {
         width: 100%;
         height: 100%;
         overflow: hidden;
-        transition: all 0.3s ease-in-out;
         text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     .contact-button span.bg {
         position: absolute;
-        width: 0;
         height: 100%;
-        overflow: hidden;
+        width: 0;
         left: -6px;
         top: 0;
+        overflow: hidden;
+        transform: skewX(-19deg);
         transition: all 0.3s ease-in-out;
         background-color: var(--min-color);
-        transform: skewX(-19deg);
-    }
-
-    .contact-button:hover span.bg {
-        width: 110%;
     }
 
     .contact-button span.base {
-        width: 100%;
-        height: 100%;
         position: absolute;
+        height: 100%;
+        width: 100%;
         left: 0;
         border: 1px solid var(--min-color);
         box-sizing: border-box;
@@ -343,14 +349,14 @@ ul.social-icons {
 }
 
 /* Work Section */
-#section-work {
-    padding: 5rem 0 5rem 1.5rem;
-    position: relative;
-    overflow: hidden;
-    padding: 50px 5.5px;
-}
-
 @media screen and (max-width: 820px) {
+    #section-work {
+        padding: 5rem 0 5rem 1.5rem;
+        position: relative;
+        overflow: hidden;
+        padding: 50px 5.5px;
+    }
+
     #header h2 {
         font-size: 1.5rem;
         font-weight: bold;
@@ -970,7 +976,7 @@ ul.aim-list li:before {
     /* Work Section */
     .section-work {
         width: 90%;
-        height: 30vh;
+        height: 30%;
         margin: 0 10%;
         padding: 0 4%;
         display: flex;
@@ -1075,24 +1081,31 @@ ul.aim-list li:before {
         color: hsla(0, 0%, 82%, 0.125);
     }
 
-    .fake-magic-wall {
-        width: 100%;
+    /* Magic Wall */
+    #fake-magic-wall.fake-magic-wall {
+        width: 90%;
+        height: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 0 0 10%;
+        margin: 0 0 0 10%;
     }
 
     .fake-magic-wall ul {
+        width: 100%;
+        height: auto;
         display: flex;
+        /* flex-wrap: wrap; */
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .fake-magic-wall ul li {
-        position: relative;
-        width: 15rem;
+        width: 14rem;
         height: 11rem;
         overflow: hidden;
+        list-style: none;
         display: list-item;
     }
 
