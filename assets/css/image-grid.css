@@ -2,11 +2,4 @@ body {
   background-color: #333;
 }
 
-.gallery{
-  columns: 300px;
-}
 
-img {
-  width: 100%;
-  margin-bottom: 1em;
-}
