@@ -123,10 +123,12 @@ const imageSets = {
         // "assets/images/catalog/random/Screenshot-2025-02-19-074920.png",
         // "assets/images/catalog/random/sofo-maame-vivian-bd-flyer-mummy.png",
         // "assets/images/catalog/random/tshirts_on_hangers-black.png",
-        // "assets/images/catalog/random/use-this-as-cover.png",
     ],
     illustration: [
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/Use-this-as-cover.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/11.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/12.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/2.png",
         // ... more images for illustration
     ],
     "ui-ux": [
@@ -134,11 +136,15 @@ const imageSets = {
         // ... more images for ui-ux
     ],
     "3d": [
-        "assets/images/catalog/3d/final_1_1GHANA-ezgif.com-speed.gif",
+        "assets/images/catalog/3d/aslan.gif",
+        "assets/images/catalog/3d/bm-graffiato.gif",
         // ... more images for 3d
     ],
     logofolio: [
         "assets/images/catalog/Logofolio/USE-THIS-AS-COVER.png",
+        "assets/images/catalog/Logofolio/logofolio-02.png",
+        "assets/images/catalog/Logofolio/logofolio-02.pn3",
+        "assets/images/catalog/Logofolio/logofolio-02.png4",
         // ... more images for logofolio
     ],
 };
