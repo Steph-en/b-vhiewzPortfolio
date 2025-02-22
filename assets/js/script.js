@@ -12,6 +12,11 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+// Alert on Contact Button Click
+function contFunc() {
+    alert("Email me: jakeamponsah2019@gmail.com");
+}
+
 // Toggle nav
 const firstLogo = document.querySelector(".logo1")
 const aside = document.querySelector(".aside")
@@ -90,6 +95,20 @@ $(document).ready(function () {
         $("#myCanvasContainer");
     }
 })
+
+// Start of Tawk.to Script
+
+var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+(function () {
+    var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = "https://embed.tawk.to/62863ac37b967b1179903462/1g3e5b43e";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
+    s0.parentNode.insertBefore(s1, s0);
+})();
 
 const imageSets = {
     random: [
