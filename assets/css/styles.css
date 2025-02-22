@@ -54,11 +54,17 @@ body {
   display: block;
 }
 
-.arrow-button {
-  position: absolute;
+.arrows {
   display: flex;
-  top: 160%;
-  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.arrow-button {
+  position: sticky;
+  top: 0%;
+  transform: translateY(50%);
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
@@ -69,11 +75,11 @@ body {
 }
 
 #prev-button {
-  left: 2rem;
+  left: 10px;
 }
 
 #next-button {
-  right: 2rem;
+  right: 10px;
 }
 
 #image-counter {
