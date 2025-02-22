@@ -91,45 +91,6 @@ $(document).ready(function () {
     }
 })
 
-// Image Gallery
-// const images = [
-//     "/assets/images/catalog/random/use-this-as-cover.png",
-//     "assets/images/catalog/random/BM-ADS-FLYERS-02.png",
-//     "assets/images/catalog/random/bm-emulsion.png",
-//     "assets/images/catalog/random/bm-matt.png",
-//     "assets/images/catalog/random/felicia-dwomoh-2.png",
-//     "assets/images/catalog/random/GO-WIRELESS-mockup-2.png",
-//     "assets/images/catalog/random/BRAND-IDENTITY.png",
-//     "assets/images/catalog/random/Screenshot 2025-02-19-075121.png",
-//     "assets/images/catalog/random/Screenshot-2025-02-19-074920.png",
-//     "assets/images/catalog/random/sofo-maame-vivian-bd-flyer-mummy.png",
-//     "assets/images/catalog/random/tshirts_on_hangers-black.png",
-//     "assets/images/catalog/random/use-this-as-cover.png",
-// ];
-
-// let currentImageIndex = 0;
-// const displayedImage = document.getElementById("displayed-image");
-// const prevButton = document.getElementById("prev-button");
-// const nextButton = document.getElementById("next-button");
-// const imageCounter = document.getElementById("image-counter");
-
-// function updateImage() {
-//     displayedImage.src = images[currentImageIndex];
-//     imageCounter.textContent = `${currentImageIndex + 1} / ${images.length}`;
-// }
-
-// updateImage();
-
-// prevButton.addEventListener("click", () => {
-//     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-//     updateImage();
-// });
-
-// nextButton.addEventListener("click", () => {
-//     currentImageIndex = (currentImageIndex + 1) % images.length;
-//     updateImage();
-// });
-
 const imageSets = {
     random: [
         "/assets/images/catalog/random/use-this-as-cover.png",
