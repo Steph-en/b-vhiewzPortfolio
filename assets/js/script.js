@@ -129,23 +129,19 @@ const imageSets = {
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/11.png",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/12.png",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/2.png",
-        // ... more images for illustration
     ],
     "ui-ux": [
         "assets/images/catalog/UI-UX/USE-THIS-AS-UI-UX-COVER.jpeg",
-        // ... more images for ui-ux
     ],
     "3d": [
         "assets/images/catalog/3d/aslan.gif",
         "assets/images/catalog/3d/bm-graffiato.gif",
-        // ... more images for 3d
     ],
     logofolio: [
         "assets/images/catalog/Logofolio/USE-THIS-AS-COVER.png",
         "assets/images/catalog/Logofolio/logofolio-02.png",
         "assets/images/catalog/Logofolio/logofolio-02.pn3",
         "assets/images/catalog/Logofolio/logofolio-02.png4",
-        // ... more images for logofolio
     ],
 };
 
