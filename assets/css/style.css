@@ -1527,7 +1527,7 @@ p.text {
     .section-blog {
         position: relative;
         width: 90%;
-        height: auto;
+        height: 50vh;
         display: flex;
         margin: 0 0 0 10%;
         padding: 0 2%;
@@ -1539,7 +1539,7 @@ p.text {
 
     .section-blog .fake-big-4 {
         position: absolute;
-        left: 10%;
+        left: 0%;
         bottom: -40%;
         z-index: -99;
         font-weight: 700;
