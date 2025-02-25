@@ -1526,6 +1526,7 @@ p.text {
     .section-blog {
         position: relative;
         width: 90%;
+        height: auto;
         display: flex;
         margin: 0 0 0 10%;
         padding: 0 2%;
@@ -1537,35 +1538,41 @@ p.text {
 
     .section-blog .fake-big-4 {
         position: absolute;
-        font-size: 28rem;
-        font-weight: 700;
-        top: -58%;
         left: 10%;
+        bottom: -40%;
         z-index: -99;
+        font-weight: 700;
+        font-size: 28rem;
         text-transform: uppercase;
         color: hsla(0, 0%, 82%, 0.125);
     }
-
+    
     .blog-articles {
-        width: 1000%;
-        height: auto;
+        width: 100%;
+        height: 40vh;
         margin: 0 0 0 0;
         display: flex;
         align-items: center;
         justify-content: center;
         justify-content: space-between;
-        /* flex-flow: row wrap; */
     }
-
+    
     .post-articles {
         width: 25rem;
-        height: 12.5rem;
+        height: 10rem;
         margin: 0;
+        background-color: var(--min-color2);
+        padding: 25px;
+        color: #dbdbdb;
+        box-shadow: 0 0 2px 2px #222222;
     }
-
+    
     .blog-post-title h5 a {
+        color: #0fc8aa;
         font-size: 1.7rem;
         line-height: 2rem;
+        text-decoration: none;
+        
     }
 }
 
