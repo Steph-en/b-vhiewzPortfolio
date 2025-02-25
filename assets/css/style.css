@@ -865,7 +865,6 @@ p.text {
 
 /* Media Query For Larger Screens */
 @media screen and (min-width: 821px) {
-
     *,
     html {
         border: 0;
@@ -946,15 +945,16 @@ p.text {
         font-weight: bold;
         line-height: 90%;
         letter-spacing: 1px;
+        margin: 0;
     }
 
     .text-zone h2#text.text {
         position: absolute;
-        top: 52%;
+        top: 58%;
         left: 0;
         font-size: 2.5em;
         font-weight: bold;
-        line-height: 90%;
+        line-height: 40%;
     }
 
     .typed-cursor {
@@ -964,6 +964,7 @@ p.text {
     .text-zone .gray-text {
         display: flex;
         font-size: 1em;
+        margin: 0;
     }
 
     .section-home::after {
@@ -1101,12 +1102,9 @@ p.text {
         margin: 0 0 0 10%;
     }
 
-    .section-slider {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-
     /* Work Section */
     .section-work {
+        position: relative;
         width: 90%;
         height: 30%;
         margin: 0 10%;
@@ -1216,48 +1214,65 @@ p.text {
     /* Magic Wall */
     #fake-magic-wall.fake-magic-wall {
         width: 90%;
-        height: 40%;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 0 0 10%;
     }
-
-    .fake-magic-wall ul {
+    
+    .fake-magic-wall .ul-container {
         width: 100%;
+        margin: 0;
+        padding: 0;
         height: auto;
         display: flex;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        background-color: hsla(0, 0%, 82%, 0.125);
     }
 
-    .fake-magic-wall ul li {
-        width: 14rem;
-        height: 11rem;
+    .fake-magic-wall .ul-container .li-container {
+        width: 15%;
+        height: auto;
         overflow: hidden;
         list-style: none;
         display: list-item;
     }
 
-    .fake-magic-wall .ten img {
-        display: block;
+    .fake-magic-wall .magic-wall-item {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    .fake-magic-wall ul li a.colorbox {
+    .fake-magic-wall img {
+        margin: 0;
+        /* display: block; */
+    }
+
+    .fake-magic-wall .ul-container .li-container a.colorbox {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 35%;
         opacity: .9;
+        text-decoration: none;
         background-size: cover;
         background-repeat: no-repeat;
         transition: all 150ms ease-out;
     }
-
-    .fake-magic-wall ul li a.colorbox::after {
+    
+    .fake-magic-wall .ul-container .li-container a.colorbox::after {
         content: 'View Project';
         height: 100%;
         width: 100%;
@@ -1272,7 +1287,7 @@ p.text {
         overflow: visible;
     }
 
-    .fake-magic-wall ul li:hover a.colorbox {
+    .fake-magic-wall .ul-container .li-container:hover a.colorbox {
         transform: scale(1.03);
         opacity: 1;
     }
