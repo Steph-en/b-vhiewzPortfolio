@@ -344,7 +344,6 @@ ul.social-icons {
     padding-top: 20rem;
 }
 
-
 /* Work Section */
 @media screen and (max-width: 820px) {
     #section-work {
@@ -646,11 +645,6 @@ p.text {
         margin-right: 0.5em;
         background-size: contain;
         background-image: url("../images/bullet.svg");
-    }
-
-    .tech {
-        text-decoration: none;
-        color: var(--min-color);
     }
 
     .fake-big-3 {
@@ -1449,6 +1443,7 @@ p.text {
 
     /* About section */
     #section-about.section-about {
+        position: relative;
         padding: 0;
         width: 85%;
         height: 60vh;
@@ -1458,10 +1453,11 @@ p.text {
         justify-content: center;
         justify-content: space-between;
         margin: 0 0 0 12%;
-        overflow: visible;
+        /* overflow: visible; */
     }
 
     .text-zone-3 #header h2 {
+        position: absolute;
         color: #08fdd6;
         font-weight: 600;
         font-size: 2.5rem;
@@ -1472,7 +1468,43 @@ p.text {
         width: 550px;
         margin-top: 0;
         text-align: left;
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    ul.aim-list {
+        margin: 0;
+        display: grid;
+        padding-left: 0.1em;
+    }
+
+    ul.aim-list li {
+        font-size: 1em;
+        margin-bottom: 0.3em;
+        margin-left: 2em;
+        position: relative;
+        list-style: none;
+    }
+
+    ul.aim-list li:before {
+        content: "";
+        left: -2em;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5em;
+        background-size: contain;
+        background-image: url("../images/bullet.svg");
+    }
+
+    .jake{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .jake img{
+        width: 50%;
+        margin: 0;
     }
 
     .fake-big-3 {
