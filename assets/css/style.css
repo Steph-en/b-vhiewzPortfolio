@@ -1363,6 +1363,7 @@ p.text {
         font-size: 20px;
         opacity: 100;
         text-transform: uppercase;
+        text-decoration: none;
     }
 
     .panel.active:hover {
@@ -1453,7 +1454,7 @@ p.text {
         justify-content: center;
         justify-content: space-between;
         margin: 0 0 0 12%;
-        /* overflow: visible; */
+        overflow: hidden;
     }
 
     .text-zone-3 #header h2 {
