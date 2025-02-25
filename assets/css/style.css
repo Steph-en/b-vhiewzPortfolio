@@ -1524,9 +1524,11 @@ p.text {
 
     /* Blog section */
     .section-blog {
+        position: relative;
         width: 90%;
         display: flex;
         margin: 0 0 0 10%;
+        padding: 0 2%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -1545,10 +1547,14 @@ p.text {
     }
 
     .blog-articles {
-        width: 90%;
+        width: 1000%;
         height: auto;
         margin: 0 0 0 0;
-        flex-flow: row wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        /* flex-flow: row wrap; */
     }
 
     .post-articles {
