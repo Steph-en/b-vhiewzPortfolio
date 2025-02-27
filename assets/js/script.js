@@ -111,7 +111,7 @@ var Tawk_API = Tawk_API || {},
 
 const imageSets = {
     random: [
-        "/assets/images/catalog/random/use-this-as-cover.png",
+        "assets/images/catalog/random/use-this-as-cover.png",
         "assets/images/catalog/random/BM-ADS-FLYERS-02.png",
         "assets/images/catalog/random/bm-emulsion.png",
         "assets/images/catalog/random/bm-matt.png",
@@ -133,10 +133,8 @@ const imageSets = {
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/5.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/6.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/7.jpeg",
-        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/8.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/9.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/10.jpeg",
-        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/11.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/12.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/13.jpeg",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/14.jpeg",
