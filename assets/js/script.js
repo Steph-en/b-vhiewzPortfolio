@@ -91,7 +91,6 @@ $(document).ready(function () {
         maxSpeed: 0.1,
         weight: true,
     }, "tags")) {
-        //something went wrong hide the canvas
         $("#myCanvasContainer");
     }
 })
@@ -118,17 +117,25 @@ const imageSets = {
         "assets/images/catalog/random/bm-matt.png",
         "assets/images/catalog/random/felicia-dwomoh-2.png",
         "assets/images/catalog/random/GO-WIRELESS-mockup-2.png",
-        // "assets/images/catalog/random/BRAND-IDENTITY.png",
-        // "assets/images/catalog/random/Screenshot 2025-02-19-075121.png",
-        // "assets/images/catalog/random/Screenshot-2025-02-19-074920.png",
-        // "assets/images/catalog/random/sofo-maame-vivian-bd-flyer-mummy.png",
-        // "assets/images/catalog/random/tshirts_on_hangers-black.png",
+        "assets/images/catalog/random/BRAND-IDENTITY.png",
+        "assets/images/catalog/random/Screenshot 2025-02-19-075121.png",
+        "assets/images/catalog/random/Screenshot-2025-02-19-074920.png",
+        "assets/images/catalog/random/sofo-maame-vivian-bd-flyer-mummy.png",
+        "assets/images/catalog/random/tshirts_on_hangers-black.png",
     ],
     illustration: [
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/Use-this-as-cover.png",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/11.png",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/12.png",
         "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/2.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/3.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/4.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/5.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/6.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/7.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/8.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/9.png",
+        "assets/images/catalog/iLLUSTRATIONS-AND-CONCEPT-ART/10.png",
     ],
     "ui-ux": [
         "assets/images/catalog/UI-UX/USE-THIS-AS-UI-UX-COVER.jpeg",
