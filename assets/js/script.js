@@ -96,7 +96,6 @@ $(document).ready(function () {
 })
 
 // Start of Tawk.to Script
-
 var Tawk_API = Tawk_API || {},
     Tawk_LoadStart = new Date();
 (function () {
@@ -110,7 +109,7 @@ var Tawk_API = Tawk_API || {},
 })();
 
 const imageSets = {
-    random: [
+    randoms: [
         "assets/images/catalog/random/use-this-as-cover.png",
         "assets/images/catalog/random/BM-ADS-FLYERS-02.png",
         "assets/images/catalog/random/bm-emulsion.png",
@@ -166,7 +165,7 @@ const imageSets = {
 
 const tabContent = document.getElementById('myTab');
 let currentImageIndex = 0;
-let currentTab = "random"; // Initialize with the default tab
+let currentTab = "randoms"; // Initialize with the default tab
 const displayedImage = document.getElementById("displayed-image");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
