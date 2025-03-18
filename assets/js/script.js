@@ -168,8 +168,8 @@ const imageSets = {
         "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/ui/lb49d3a7f8gjjivucj7v",
     ],
     "3d": [
-        "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/3d/dgp0nfx6mdmkbpcwsxrh",
-        "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/3d/shfmu6omzedzwro5wpfm",
+        "assets/images/catalog/3d/aslan.gif",
+        "assets/images/catalog/3d/bm-graffiato.gif",
     ],
     logofolio: [
         "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/logo/jwmydrcryak7oh85nb5r",
