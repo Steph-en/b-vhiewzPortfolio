@@ -35,8 +35,6 @@ body {
 
 /* header */
 header {
-    /* position: fixed; */
-    /* top: 0; */
     width: 98%;
     height: 10vh;
     margin: auto;
@@ -210,11 +208,11 @@ ul.social-icons {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .text-zone .desktop {
         display: none;
     }
-    
+
     .text-zone h1.mobile {
         margin: 0;
         color: #fff;
@@ -228,10 +226,10 @@ ul.social-icons {
         letter-spacing: 0.5px;
     }
 
-    .text-zone h1.mobile p{
+    .text-zone h1.mobile p {
         margin: 0;
     }
-    
+
     h2#text.text {
         position: absolute;
         height: auto;
@@ -262,7 +260,6 @@ ul.social-icons {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        /* max-width: 200px; */
         display: block;
         line-height: 40px;
         letter-spacing: 3px;
@@ -312,35 +309,56 @@ ul.social-icons {
         display: none;
     }
 
-    .marquee {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
+    /* ifinite scroll */
+    .logos {
+        overflow: 10px 0;
+        white-space: nowrap;
+        position: relative;
     }
 
-    .marquee .ul-marquee {
-        width: 100%;
+    .logos:before,
+    .logos:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 250px;
         height: 100%;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .marquee .ul-marquee .li-marquee{
-        width: 100%;
-        height: auto;
+        z-index: 2;
     }
 
-    .marquee .ul-marquee .li-marquee img {
-        margin: 0;
-        width: 100%;
-        height: 100%;
+    .logos:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    .logos:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
+
+    .logos:hover .logos-slide {
+        animation-play-state: paused;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 10s slide infinite linear;
+    }
+
+    .logos-slide img {
+        height: 60px;
+        width: auto;
+        margin: 0 20px;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
     }
 
     /* Scroll Down */
@@ -1014,6 +1032,10 @@ p.text {
         background-repeat: no-repeat;
         color: hsla(0, 0%, 82%, 0.125);
         z-index: -99;
+    }
+
+    .logos {
+        display: none;
     }
 
     /* Contact me button */
